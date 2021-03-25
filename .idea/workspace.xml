@@ -9,7 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="297e0080-9b8a-4b0f-a7d7-dd61c302a2de" name="Default Changelist" comment="" />
+    <list default="true" id="297e0080-9b8a-4b0f-a7d7-dd61c302a2de" name="Default Changelist" comment="gymnasium">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/add_coach.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/add_coach.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/add_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/add_manager.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/backup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/backup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/log.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/log.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_coach.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_coach.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_manager.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/modifypsw.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/modifypsw.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/log.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/log.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1.doc" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,17 +104,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 7.0.94" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.94" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -382,11 +382,25 @@
       <workItem from="1616172860330" duration="2383000" />
       <workItem from="1616255400990" duration="303000" />
       <workItem from="1616403232250" duration="620000" />
-      <workItem from="1616680125051" duration="113000" />
+      <workItem from="1616680125051" duration="662000" />
+      <workItem from="1616680812379" duration="1366000" />
+      <workItem from="1616682221242" duration="225000" />
     </task>
+    <task id="LOCAL-00001" summary="gymnasium">
+      <created>1616680538843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616680538843</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gymnasium" />
+    <option name="LAST_COMMIT_MESSAGE" value="gymnasium" />
   </component>
 </project>
