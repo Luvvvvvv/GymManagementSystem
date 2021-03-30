@@ -59,7 +59,7 @@ function bjump2(){
 	}
 	if(form3.busjump.value>pageCount){//如果跳转文本框中输入的页数超过最后一页的数，则跳到最后一页
 	  if(pageCount==0){	
-	  form3.action="<%=basePath%>admin/xm/manager/search_card_info1.jsp?page=1";
+	  form3.action="<%=basePath%>admin/manager/search_card_info1.jsp?page=1";
 	  form3.submit();
 	}
 	else{
@@ -109,11 +109,11 @@ String message = (String)request.getAttribute("message");
 	}
 	request.removeAttribute("message"); 
 	
-	String username=(String)session.getAttribute("user");String sf=(String)session.getAttribute("sf"); 
+	String username=(String)session.getAttribute("user");String identity=(String)session.getAttribute("identity"); 
 	if(username==null){
 		response.sendRedirect(path+"index.jsp");
 	}
-	else{  String dw=cb.getString("select address from admin where username='"+username+"'"); 
+	else{
 %>
 <body>
 <div class="right_cont">
@@ -134,14 +134,14 @@ String message = (String)request.getAttribute("message");
        </tr>
 <%	String word=Common.toChineseAndTrim(request.getParameter("word")); 
 	cb.setEVERYPAGENUM(12);
-	int cou = cb.getMessageCount("select count(*) from xm where bh like '%"+word+"%' ");//得到信息总数			        
+	int cou = cb.getMessageCount("select count(*) from cards where name like '%"+word+"%' ");//得到信息总数
 	String page1=request.getParameter("page");
 	if(page1==null){
 		page1="1";
 	}
 	session.setAttribute("busMessageCount", cou + "");
 	session.setAttribute("busPage", page1);
-	List pagelist1 = cb.getMessage(Integer.parseInt(page1),"select * from xm where bh like '%"+word+"%' order by id desc",17);
+	List pagelist1 = cb.getMessage(Integer.parseInt(page1),"select * from cards where name like '%"+word+"%' order by id desc",7);
 	session.setAttribute("qqq", pagelist1);
 	int pageCount = cb.getPageCount(); //得到页数  
 	session.setAttribute("busPageCount", pageCount + ""); 
@@ -153,13 +153,13 @@ String message = (String)request.getAttribute("message");
        <tr align="center">
          <td nowrap="nowrap"><%=i+1 %></td>
          <td nowrap="nowrap"><%=pagelist2.get(1).toString() %></td>
-         <td nowrap="nowrap"><%=pagelist2.get(7).toString() %></td>
-         <td nowrap="nowrap"><%=pagelist2.get(8).toString() %></td>
-         <td nowrap="nowrap"><a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(9).toString()%>">下载</a></td>
-         <td nowrap="nowrap"><%=pagelist2.get(10).toString() %></td>
-         <td nowrap="nowrap"><%=pagelist2.get(12).toString() %></td>
+         <td nowrap="nowrap"><%=pagelist2.get(2).toString() %></td>
+         <td nowrap="nowrap"><%=pagelist2.get(3).toString() %></td>
+         <td nowrap="nowrap"><a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(4).toString()%>">下载</a></td>
+         <td nowrap="nowrap"><%=pagelist2.get(5).toString() %></td>
+         <td nowrap="nowrap"><%=pagelist2.get(6).toString() %></td>
          <td nowrap="nowrap"> 
-         <a href="<%=basePath%>ComServlet?method=delxm5&id=<%=pagelist2.get(0).toString()%>">删除</a>
+         <a href="<%=basePath%>ComServlet?method=delcards1&id=<%=pagelist2.get(0).toString()%>">删除</a>
          </td>
        </tr>
 <% }} %>

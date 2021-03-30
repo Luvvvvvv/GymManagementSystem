@@ -109,7 +109,7 @@ String message = (String)request.getAttribute("message");
 	}
 	request.removeAttribute("message"); 
 	
-	String username=(String)session.getAttribute("user");String sf=(String)session.getAttribute("sf"); 
+	String username=(String)session.getAttribute("user");String identity=(String)session.getAttribute("identity"); 
 	if(username==null){
 		response.sendRedirect(path+"index.jsp");
 	}
@@ -133,14 +133,14 @@ String message = (String)request.getAttribute("message");
        </tr>
 <%	String word=Common.toChineseAndTrim(request.getParameter("word")); 
 	cb.setEVERYPAGENUM(12);
-	int cou = cb.getMessageCount("select count(*) from fk where mc like '%"+word+"%' and dw='"+dw+"'");//得到信息总数			        
+	int cou = cb.getMessageCount("select count(*) from feedback where title like '%"+word+"%' and dw='"+dw+"'");//得到信息总数			        
 	String page1=request.getParameter("page");
 	if(page1==null){
 		page1="1";
 	}
 	session.setAttribute("busMessageCount", cou + "");
 	session.setAttribute("busPage", page1);
-	List pagelist1 = cb.getMessage(Integer.parseInt(page1),"select * from fk where mc like '%"+word+"%' and dw='"+dw+"' order by id desc",6);
+	List pagelist1 = cb.getMessage(Integer.parseInt(page1),"select * from feedback where title like '%"+word+"%' and dw='"+dw+"' order by id desc",6);
 	session.setAttribute("qqq", pagelist1);
 	int pageCount = cb.getPageCount(); //得到页数  
 	session.setAttribute("busPageCount", pageCount + ""); 
@@ -156,7 +156,7 @@ String message = (String)request.getAttribute("message");
          <td nowrap="nowrap"><%=pagelist2.get(3).toString() %></td>    
          <td nowrap="nowrap"><%=pagelist2.get(4).toString() %></td>
          <td nowrap="nowrap"> 
-         <a href="<%=basePath%>ComServlet?method=delfk2&id=<%=pagelist2.get(0).toString()%>">删除</a>
+         <a href="<%=basePath%>ComServlet?method=delfeedback1&id=<%=pagelist2.get(0).toString()%>">删除</a>
          </td>
        </tr>
 <% }} %>

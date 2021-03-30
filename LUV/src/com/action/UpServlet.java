@@ -84,15 +84,15 @@ public class UpServlet extends HttpServlet {
             mySmartUpload.initialize(config, request, response);
             mySmartUpload.upload();
             method = mySmartUpload.getRequest().getParameter("method").trim();
-            if (method.equals("addwj")) {// 上传文件
+            if (method.equals("addfiles")) {// 上传文件
                 String username = (String) session.getAttribute("user");
                 String dw = cb.getString("select address from admin where username='" + username + "'");
-                String mc = mySmartUpload.getRequest().getParameter("mc");
-                String bz = mySmartUpload.getRequest().getParameter("bz");
+                String title = mySmartUpload.getRequest().getParameter("title");
+                String description = mySmartUpload.getRequest().getParameter("description");
                 SmartFile file = mySmartUpload.getFiles().getFile(0);
                 String path = "upfile";
                 count = mySmartUpload.save(path);
-                int flag = cb.comUp("insert into wj(mc,url,bz,sj,yh,dw) values('" + mc + "','" + path + "/" + file.getFileName() + "','" + bz + "','" + date2 + "','" + username + "','" + dw + "')");
+                int flag = cb.comUp("insert into files(title,url,description,addtime,users,dw) values('" + title + "','" + path + "/" + file.getFileName() + "','" + description + "','" + date2 + "','" + username + "','" + dw + "')");
                 if (flag == Constant.SUCCESS) {
                     request.setAttribute("message", "操作成功！");
                     request.getRequestDispatcher("admin/manager/manage_file.jsp").forward(request, response);
@@ -100,17 +100,17 @@ public class UpServlet extends HttpServlet {
                     request.setAttribute("message", "操作失败！");
                     request.getRequestDispatcher("admin/manager/manage_file.jsp").forward(request, response);
                 }
-            } else if (method.equals("upwj")) {//修改 文件
+            } else if (method.equals("upfiles")) {//修改 文件
                 String id = mySmartUpload.getRequest().getParameter("id");
                 String username = (String) session.getAttribute("user");
                 String dw = cb.getString("select address from admin where username='" + username + "'");
-                String mc = mySmartUpload.getRequest().getParameter("mc");
-                String bz = mySmartUpload.getRequest().getParameter("bz");
+                String title = mySmartUpload.getRequest().getParameter("title");
+                String description = mySmartUpload.getRequest().getParameter("description");
                 SmartFile file = mySmartUpload.getFiles().getFile(0);
                 String path = "upfile";
                 count = mySmartUpload.save(path);
                 if (count == 0) {
-                    int flag = cb.comUp("update wj set mc='" + mc + "',bz='" + bz + "',sj='" + date2 + "',yh='" + username + "',dw='" + dw + "' where id='" + id + "'");
+                    int flag = cb.comUp("update files set title='" + title + "',description='" + description + "',addtime='" + date2 + "',users='" + username + "',dw='" + dw + "' where id='" + id + "'");
                     if (flag == Constant.SUCCESS) {
                         request.setAttribute("message", "操作成功！");
                         request.getRequestDispatcher("admin/manager/manage_file.jsp").forward(request, response);
@@ -119,7 +119,7 @@ public class UpServlet extends HttpServlet {
                         request.getRequestDispatcher("admin/manager/manage_file.jsp").forward(request, response);
                     }
                 } else {
-                    int flag = cb.comUp("update wj set mc='" + mc + "',url='" + path + "/" + file.getFileName() + "',bz='" + bz + "',sj='" + date2 + "',yh='" + username + "',dw='" + dw + "' where id='" + id + "' ");
+                    int flag = cb.comUp("update files set title='" + title + "',url='" + path + "/" + file.getFileName() + "',description='" + description + "',addtime='" + date2 + "',users='" + username + "',dw='" + dw + "' where id='" + id + "' ");
                     if (flag == Constant.SUCCESS) {
                         request.setAttribute("message", "操作成功！");
                         request.getRequestDispatcher("admin/manager/manage_file.jsp").forward(request, response);
@@ -128,17 +128,16 @@ public class UpServlet extends HttpServlet {
                         request.getRequestDispatcher("admin/manager/manage_file.jsp").forward(request, response);
                     }
                 }
-            } else if (method.equals("addxm")) {          // 添加办卡人员
+            } else if (method.equals("addcards")) {          // 添加办卡人员
                 String username = (String) session.getAttribute("user");
-                String dw = cb.getString("select address from admin where username='" + username + "'");
-                String bh = mySmartUpload.getRequest().getParameter("bh");
-                String ksj = mySmartUpload.getRequest().getParameter("ksj");
-                String esj = mySmartUpload.getRequest().getParameter("esj");
+                String name = mySmartUpload.getRequest().getParameter("name");
+                String start = mySmartUpload.getRequest().getParameter("start");
+                String end = mySmartUpload.getRequest().getParameter("end");
                 SmartFile file = mySmartUpload.getFiles().getFile(0);
                 String path = "upfile";
                 count = mySmartUpload.save(path);
-                int flag = cb.comUp("insert into xm(bh,ksj,esj,url,yh,dw,sj) " +
-                        "values('" + bh + "','" + ksj + "','" + esj + "','" + path + "/" + file.getFileName() + "','" + username + "','" + dw + "','" + date2 + "')");
+                int flag = cb.comUp("insert into cards(name,start,end,url,users,addtime) " +
+                        "values('" + name + "','" + start + "','" + end + "','" + path + "/" + file.getFileName() + "','" + username + "','" + date2 + "')");
                 if (flag == Constant.SUCCESS) {
                     request.setAttribute("message", "操作成功！");
                     request.getRequestDispatcher("admin/coach/manage_card.jsp").forward(request, response);
@@ -146,20 +145,18 @@ public class UpServlet extends HttpServlet {
                     request.setAttribute("message", "操作失败！");
                     request.getRequestDispatcher("admin/coach/manage_card.jsp").forward(request, response);
                 }
-            } else if (method.equals("upxm")) {         //修改办卡人员
+            } else if (method.equals("upcards")) {         //修改办卡人员
                 String id = mySmartUpload.getRequest().getParameter("id");
                 String username = (String) session.getAttribute("user");
-                String dw = cb.getString("select address from admin where username='" + username + "'");
-                String bh = mySmartUpload.getRequest().getParameter("bh");
-                String ksj = mySmartUpload.getRequest().getParameter("ksj");
-                String esj = mySmartUpload.getRequest().getParameter("esj");
+                String name = mySmartUpload.getRequest().getParameter("name");
+                String start = mySmartUpload.getRequest().getParameter("start");
+                String end = mySmartUpload.getRequest().getParameter("end");
                 SmartFile file = mySmartUpload.getFiles().getFile(0);
-
                 String path = "upfile";
                 count = mySmartUpload.save(path);
                 if (count == 0) {
-                    int flag = cb.comUp("update xm set bh='" + bh + "',ksj='" + ksj + "',esj='" + esj + "'," +
-                            "yh='" + username + "',dw='" + dw + "',sj='" + date2 + "' where id='" + id + "'");
+                    int flag = cb.comUp("update cards set name='" + name + "',start='" + start + "',end='" + end + "'," +
+                            "users='" + username + "',addtime='" + date2 + "' where id='" + id + "'");
                     if (flag == Constant.SUCCESS) {
                         request.setAttribute("message", "操作成功！");
                         request.getRequestDispatcher("admin/coach/manage_card.jsp").forward(request, response);
@@ -168,8 +165,8 @@ public class UpServlet extends HttpServlet {
                         request.getRequestDispatcher("admin/coach/manage_card.jsp").forward(request, response);
                     }
                 } else {
-                    int flag = cb.comUp("update xm set bh='" + bh + "',ksj='" + ksj + "',esj='" + esj + "'," +
-                            "url='" + path + "/" + file.getFileName() + "',yh='" + username + "',dw='" + dw + "',sj='" + date2 + "' where id='" + id + "'");
+                    int flag = cb.comUp("update cards set name='" + name + "',start='" + start + "',end='" + end + "'," +
+                            "url='" + path + "/" + file.getFileName() + "',users='" + username + "',addtime='" + date2 + "' where id='" + id + "'");
                     if (flag == Constant.SUCCESS) {
                         request.setAttribute("message", "操作成功！");
                         request.getRequestDispatcher("admin/coach/manage_card.jsp").forward(request, response);
@@ -178,18 +175,17 @@ public class UpServlet extends HttpServlet {
                         request.getRequestDispatcher("admin/coach/manage_card.jsp").forward(request, response);
                     }
                 }
-            } else if (method.equals("addcg")) {       //添加私教课程
+            } else if (method.equals("addmembers")) {       //添加私教课程
                 String username = (String) session.getAttribute("user");
-                String dw = cb.getString("select address from admin where username='" + username + "'");
-                String bh = mySmartUpload.getRequest().getParameter("bh");
-                String mc = mySmartUpload.getRequest().getParameter("mc");
-                String xk = mySmartUpload.getRequest().getParameter("xk");
-                String bz = mySmartUpload.getRequest().getParameter("bz");
+                String name = mySmartUpload.getRequest().getParameter("name");
+                String content = mySmartUpload.getRequest().getParameter("content");
+                String objective = mySmartUpload.getRequest().getParameter("objective");
+                String number = mySmartUpload.getRequest().getParameter("number");
                 SmartFile file = mySmartUpload.getFiles().getFile(0);
                 String path = "upfile";
                 count = mySmartUpload.save(path);
-                int flag = cb.comUp("insert into cg(bh,mc,xk,bz,url,yh,dw,sj) " +
-                        "values('" + bh + "','" + mc + "','" + xk + "','" + bz + "','" + path + "/" + file.getFileName() + "','" + username + "','" + dw + "','" + date2 + "')");
+                int flag = cb.comUp("insert into members(name,content,objective,number,url,users,addtime) " +
+                        "values('" + name + "','" + content + "','" + objective + "','" + number + "','" + path + "/" + file.getFileName() + "','" + username + "','" + date2 + "')");
                 if (flag == Constant.SUCCESS) {
                     request.setAttribute("message", "操作成功！");
                     request.getRequestDispatcher("admin/coach/manage_member.jsp").forward(request, response);
@@ -197,20 +193,19 @@ public class UpServlet extends HttpServlet {
                     request.setAttribute("message", "操作失败！");
                     request.getRequestDispatcher("admin/coach/manage_member.jsp").forward(request, response);
                 }
-            } else if (method.equals("upcg")) {       //修改私教课程
+            } else if (method.equals("upmembers")) {       //修改私教课程
                 String id = mySmartUpload.getRequest().getParameter("id");
                 String username = (String) session.getAttribute("user");
-                String dw = cb.getString("select address from admin where username='" + username + "'");
-                String bh = mySmartUpload.getRequest().getParameter("bh");
-                String mc = mySmartUpload.getRequest().getParameter("mc");
-                String xk = mySmartUpload.getRequest().getParameter("xk");
-                String bz = mySmartUpload.getRequest().getParameter("bz");
+                String name = mySmartUpload.getRequest().getParameter("name");
+                String content = mySmartUpload.getRequest().getParameter("content");
+                String objective = mySmartUpload.getRequest().getParameter("objective");
+                String number = mySmartUpload.getRequest().getParameter("number");
                 SmartFile file = mySmartUpload.getFiles().getFile(0);
                 String path = "upfile";
                 count = mySmartUpload.save(path);
                 if (count == 0) {
-                    int flag = cb.comUp("update cg set bh='" + bh + "',mc='" + mc + "',xk='" + xk + "',bz='" + bz + "'," +
-                            "yh='" + username + "',dw='" + dw + "',sj='" + date2 + "' where id='" + id + "'");
+                    int flag = cb.comUp("update members set name='" + name + "',content='" + content + "',objective='" + objective + "',number='" + number + "'," +
+                            "users='" + username + "',addtime='" + date2 + "' where id='" + id + "'");
                     if (flag == Constant.SUCCESS) {
                         request.setAttribute("message", "操作成功！");
                         request.getRequestDispatcher("admin/coach/manage_member.jsp").forward(request, response);
@@ -219,8 +214,8 @@ public class UpServlet extends HttpServlet {
                         request.getRequestDispatcher("admin/coach/manage_member.jsp").forward(request, response);
                     }
                 } else {
-                    int flag = cb.comUp("update cg set bh='" + bh + "',mc='" + mc + "',xk='" + xk + "',bz='" + bz + "'," +
-                            "url='" + path + "/" + file.getFileName() + "',yh='" + username + "',dw='" + dw + "',sj='" + date2 + "' where id='" + id + "'");
+                    int flag = cb.comUp("update members set name='" + name + "',content='" + content + "',objective='" + objective + "',number='" + number + "'," +
+                            "url='" + path + "/" + file.getFileName() + "',users='" + username + "',addtime='" + date2 + "' where id='" + id + "'");
                     if (flag == Constant.SUCCESS) {
                         request.setAttribute("message", "操作成功！");
                         request.getRequestDispatcher("admin/coach/manage_member.jsp").forward(request, response);

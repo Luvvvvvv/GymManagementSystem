@@ -33,7 +33,7 @@ String message = (String)request.getAttribute("message");
 		response.sendRedirect(basePath+"index.jsp");
 	}
 	else{
-		 String method="upm2";
+		 String method="upmanagerinfo";
 		 String realname="";String sex="";String age="";String tel="";
 			List alist=cb.get1Com("select * from admin where username='"+username+"'",10); 
 			realname=alist.get(3).toString();
@@ -48,15 +48,15 @@ String message = (String)request.getAttribute("message");
 <form action="<%=basePath %>AdminServlet?method=<%=method%>" method="post" name="form1">
 <table class="table table-bordered">
      <tr>
-     <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">用户姓名：</td>
+     <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
      <td><input type="text" name="realname" class="span4" value="<%=realname %>" required/></td> 
      </tr>
      <tr>
-     <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">职称信息：</td>
+     <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
      <td><input type="text" name="sex" class="span4" value="<%=sex %>" required/></td> 
      </tr>
      <tr>
-     <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">学历信息：</td>
+     <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：</td>
      <td><input type="text" name="age" class="span4" value="<%=age %>" required/></td> 
      </tr>
      <tr>

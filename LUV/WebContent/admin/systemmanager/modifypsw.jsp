@@ -83,7 +83,7 @@ String message = (String)request.getAttribute("message");
                                required/></td>
                 </tr>
                 <tr>
-                    <td width="40%" align="right" nowrap="nowrap" bgcolor="f1f1f1">确认&nbsp;密码：</td>
+                    <td width="40%" align="right" nowrap="nowrap" bgcolor="f1f1f1">确认密码：</td>
                     <td><input type="password" name="repwd" id="repwd" onchange="checkPasswords()" class="span3"
                                required/></td>
                 </tr>

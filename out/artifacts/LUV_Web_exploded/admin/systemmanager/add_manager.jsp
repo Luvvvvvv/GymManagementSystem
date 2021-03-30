@@ -35,8 +35,8 @@ String message = (String)request.getAttribute("message");
 	else{
 		String method=request.getParameter("method");
 		String id="";
-		String usernam="";String password="";String realname="";String sex="";String age="";String address="";String tel=""; 
-		if(method.equals("upm")){
+		String usernam="";String password="";String realname="";String sex="";String age="";String address="";String tel="";
+		if(method.equals("upmanager")){
 			id=request.getParameter("id");
 			List alist=cb.get1Com("select * from admin where id='"+id+"'",10);
 			usernam=alist.get(1).toString();
@@ -55,7 +55,7 @@ String message = (String)request.getAttribute("message");
             <table class="table table-bordered">
                 <tr>
                     <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">µÇÂ¼ÕÊºÅ£º</td>
-                    <td><%if (method.equals("upm")) { %><input type="text" name="username" class="span4"
+                    <td><%if (method.equals("upmanager")) { %><input type="text" name="username" class="span4"
                                                                value="<%=usernam %>" readonly/><%} else { %><input
                             type="text" class="span4" name="username" required/><% } %></td>
                 </tr>

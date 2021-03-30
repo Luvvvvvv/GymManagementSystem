@@ -109,7 +109,7 @@ String message = (String)request.getAttribute("message");
 	}
 	request.removeAttribute("message"); 
 	
-	String username=(String)session.getAttribute("user");String sf=(String)session.getAttribute("sf"); 
+	String username=(String)session.getAttribute("user");String identity=(String)session.getAttribute("identity"); 
 	if(username==null){
 		response.sendRedirect(path+"manage_member.jsp");
 	}
@@ -117,7 +117,7 @@ String message = (String)request.getAttribute("message");
 %>
 <body>
 <div class="right_cont">
-<div class="title_right"><strong>科研成果管理</strong></div>  
+<div class="title_right"><strong>私教课程管理</strong></div>
 <div style="width:100%;margin:auto;">
 <form action="" method="post" name="form3">	
 <table class="table table-bordered table-striped table-hover">
@@ -135,14 +135,14 @@ String message = (String)request.getAttribute("message");
        </tr>
 <%	String word=Common.toChineseAndTrim(request.getParameter("word")); 
 	cb.setEVERYPAGENUM(12);
-	int cou = cb.getMessageCount("select count(*) from cg where bh like '%"+word+"%' ");//得到信息总数			        
+	int cou = cb.getMessageCount("select count(*) from members where name like '%"+word+"%' ");//得到信息总数
 	String page1=request.getParameter("page");
 	if(page1==null){
 		page1="1";
 	}
 	session.setAttribute("busMessageCount", cou + "");
 	session.setAttribute("busPage", page1);
-	List pagelist1 = cb.getMessage(Integer.parseInt(page1),"select * from cg where bh like '%"+word+"%' order by id desc",13);
+	List pagelist1 = cb.getMessage(Integer.parseInt(page1),"select * from members where name like '%"+word+"%' order by id desc",9);
 	session.setAttribute("qqq", pagelist1);
 	int pageCount = cb.getPageCount(); //得到页数  
 	session.setAttribute("busPageCount", pageCount + ""); 
@@ -154,14 +154,14 @@ String message = (String)request.getAttribute("message");
        <tr align="center">
          <td nowrap="nowrap"><%=i+1 %></td>
          <td nowrap="nowrap"><%=pagelist2.get(1).toString() %></td>
+         <td nowrap="nowrap"><%=pagelist2.get(2).toString() %></td>
          <td nowrap="nowrap"><%=pagelist2.get(3).toString() %></td>
-         <td nowrap="nowrap"><%=pagelist2.get(5).toString() %></td>
+         <td nowrap="nowrap"><%=pagelist2.get(4).toString() %></td>
+         <td nowrap="nowrap"><a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(5).toString()%>">下载</a></td>
          <td nowrap="nowrap"><%=pagelist2.get(6).toString() %></td>
-         <td nowrap="nowrap"><a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(7).toString()%>">下载</a></td>  
-         <td nowrap="nowrap"><%=pagelist2.get(8).toString() %></td>
-         <td nowrap="nowrap"><%=pagelist2.get(10).toString() %></td>
+         <td nowrap="nowrap"><%=pagelist2.get(7).toString() %></td>
          <td nowrap="nowrap"> 
-         <a href="<%=basePath%>ComServlet?method=delcg5&id=<%=pagelist2.get(0).toString()%>">删除</a>
+         <a href="<%=basePath%>ComServlet?method=delmembers1&id=<%=pagelist2.get(0).toString()%>">删除</a>
          </td>
        </tr>
 <% }} %>

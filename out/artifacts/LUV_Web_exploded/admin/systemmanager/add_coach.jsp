@@ -36,7 +36,7 @@ String message = (String)request.getAttribute("message");
 		String method=request.getParameter("method");
 		String id="";
 		String usernam="";String password="";String realname="";String sex="";String age="";String tel="";
-		if(method.equals("upxs")){
+		if(method.equals("upcoach")){
 			id=request.getParameter("id");
 			List alist=cb.get1Com("select * from admin where id='"+id+"'",10);
 			usernam=alist.get(1).toString();
@@ -55,7 +55,7 @@ String message = (String)request.getAttribute("message");
             <table class="table table-bordered">
                 <tr>
                     <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">登录帐号：</td>
-                    <td><%if (method.equals("upxs")) { %><input type="text" name="username" class="span4"
+                    <td><%if (method.equals("upcoach")) { %><input type="text" name="username" class="span4"
                                                                 value="<%=usernam %>" readonly/><%} else { %><input
                             type="text" class="span4" name="username" required/><% } %></td>
                 </tr>
@@ -80,7 +80,6 @@ String message = (String)request.getAttribute("message");
                     <td><input type="text" name="tel" class="span4" value="<%=tel %>" pattern="[0-9]{11}"
                                title="11位手机号码" required/></td>
                 </tr>
-
                 <tr>
                     <td class="text-center" colspan="2"><input type="submit" value="确定" class="btn btn-info  "
                                                                style="width:100px;"/></td>

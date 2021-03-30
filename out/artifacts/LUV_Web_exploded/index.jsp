@@ -25,13 +25,6 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-
     </head>
 
     <body>
@@ -105,9 +98,9 @@ function lost() {
 			                        <div class="form-group">
 
 			                        	<%--@declare id="form-email"--%><label class="sr-only" for="form-email">用户身份：</label>
-											<input type="radio" name="sf" value="健身教练" checked="checked">  健身教练
-											<input type="radio" name="sf" value="管理人员" >  管理人员
-											<input type="radio" name="sf" value="系统管理员" >  系统管理员
+											<input type="radio" name="identity" value="健身教练" checked="checked">  健身教练
+											<input type="radio" name="identity" value="管理人员" >  管理人员
+											<input type="radio" name="identity" value="系统管理员" >  系统管理员
 			                        </div>
 			                        <div align="center">
 			                        	<button type="submit" value="点击登录" >登陆</button>

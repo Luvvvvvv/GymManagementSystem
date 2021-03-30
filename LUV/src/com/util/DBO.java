@@ -16,7 +16,7 @@ public class DBO {
     public void open() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/keyan?useUnicode=true&characterEncoding=gb2312", "root", "123");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/luv?useUnicode=true&characterEncoding=gb2312", "root", "123");
 
             stmt = conn.createStatement();
             System.out.println("打开数据库连接");

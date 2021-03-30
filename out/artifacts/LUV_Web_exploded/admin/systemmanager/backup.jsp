@@ -38,7 +38,7 @@ String message = (String)request.getAttribute("message");
 <div class="right_cont">
     <div class="title_right"><strong>数据备份管理</strong></div>
     <div style="width:900px;margin:auto;">
-        <form action="<%=basePath %>ComServlet?method=bfdb" method="post" name="form1">
+        <form action="<%=basePath %>ComServlet?method=backupdb" method="post" name="form1">
             <table class="table table-bordered">
                 <tr>
                     <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">数据库备份文件路径：</td>

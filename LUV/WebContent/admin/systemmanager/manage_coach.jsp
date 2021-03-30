@@ -135,19 +135,19 @@ String message = (String)request.getAttribute("message");
                     <td width="150px"><strong>性别</strong></td>
                     <td width="150px"><strong>年龄</strong></td>
                     <td width="300px"><strong>联系电话</strong></td>
-                    <td><strong>创建时间</strong></td>
+                    <td width="150px"><strong>创建时间</strong></td>
                     <td width="100px" nowrap="nowrap"><strong>操作</strong></td>
                 </tr>
                 <%
                     cb.setEVERYPAGENUM(12);
-                    int cou = cb.getMessageCount("select count(*) from admin where sf ='健身教练'");//得到信息总数
+                    int cou = cb.getMessageCount("select count(*) from admin where identity ='健身教练'");//得到信息总数
                     String page1 = request.getParameter("page");
                     if (page1 == null) {
                         page1 = "1";
                     }
                     session.setAttribute("busMessageCount", cou + "");
                     session.setAttribute("busPage", page1);
-                    List pagelist1 = cb.getMessage(Integer.parseInt(page1), "select * from admin where sf ='健身教练' order by id desc", 10);
+                    List pagelist1 = cb.getMessage(Integer.parseInt(page1), "select * from admin where identity ='健身教练' order by id desc", 9);
                     session.setAttribute("qqq", pagelist1);
                     int pageCount = cb.getPageCount(); //得到页数
                     session.setAttribute("busPageCount", pageCount + "");
@@ -169,11 +169,11 @@ String message = (String)request.getAttribute("message");
                     </td>
                     <td nowrap="nowrap"><%=pagelist2.get(6).toString() %>
                     </td>
-                    <td nowrap="nowrap"><%=pagelist2.get(8).toString() %>
+                    <td nowrap="nowrap"><%=pagelist2.get(7).toString() %>
                     </td>
                     <td nowrap="nowrap"><a
-                            href="<%=basePath%>admin/systemmanager/add_coach.jsp?method=upxs&id=<%=pagelist2.get(0).toString()%>">修改</a>
-                        <a href="<%=basePath%>AdminServlet?method=delxs&id=<%=pagelist2.get(0).toString()%>">删除</a></td>
+                            href="<%=basePath%>admin/systemmanager/add_coach.jsp?method=upcoach&id=<%=pagelist2.get(0).toString()%>">修改</a>
+                        <a href="<%=basePath%>AdminServlet?method=delcoach&id=<%=pagelist2.get(0).toString()%>">删除</a></td>
                 </tr>
                 <% }
                 } %>

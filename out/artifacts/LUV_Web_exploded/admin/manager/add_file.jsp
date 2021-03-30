@@ -35,13 +35,13 @@ String message = (String)request.getAttribute("message");
 	}
 	else{ 
 		String method=request.getParameter("method");  
-		String id="";String mc="";String pic="";String bz=""; 
-		if(method.equals("upwj")){
+		String id="";String title="";String pic="";String description=""; 
+		if(method.equals("upfiles")){
 			id=request.getParameter("id");
-			List jlist = cb.get1Com("select * from wj where id='"+id+"'",4);
-			mc=jlist.get(1).toString(); 
+			List jlist = cb.get1Com("select * from files where id='"+id+"'",4);
+			title=jlist.get(1).toString(); 
 			pic=jlist.get(2).toString();  
-			bz=jlist.get(3).toString();  
+			description=jlist.get(3).toString();  
 		}	  
 %>
 <body>
@@ -52,9 +52,9 @@ String message = (String)request.getAttribute("message");
 <table class="table table-bordered"> 
      <tr><input type="hidden" name="method" value="<%=method%>" /><input type="hidden" name="id" value="<%=id%>" />
      <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">文件名称：</td>
-     <td><input type="text" name="mc" class="span4" value="<%=mc %>" required/></td> 
+     <td><input type="text" name="title" class="span4" value="<%=title %>" required/></td> 
      </tr>  
-     <%if(method.equals("upwj")){ %>
+     <%if(method.equals("upfiles")){ %>
      <tr>
      <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">上传文件：</td>
      <td><input type=file name="pic" class="span4" />  </td> 
@@ -68,7 +68,7 @@ String message = (String)request.getAttribute("message");
       
      <tr>
      <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">文件说明：</td>
-     <td><textarea name="bz" cols="100" class="span4" rows="5" required><%=bz%></textarea></td> 
+     <td><textarea name="description" cols="100" class="span4" rows="5" required><%=description%></textarea></td> 
      </tr> 
      
      <tr>

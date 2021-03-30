@@ -71,16 +71,16 @@ public class AdminServlet extends HttpServlet {
 			if(method.equals("one")){        //用户登录
 				String username = request.getParameter("username");
 				String password = request.getParameter("password");
-				String sf = request.getParameter("sf");
-				String str=cBean.getString("select realname from admin where username='"+username+"' and  password='"+password+"' and  sf='"+sf+"' ");
+				String identity = request.getParameter("identity");
+				String str=cBean.getString("select realname from admin where username='"+username+"' and  password='"+password+"' and  identity='"+identity+"' ");
 				if(str==null){
 					request.setAttribute("message", "登录信息错误！");
 					request.getRequestDispatcher("index.jsp").forward(request, response); 
 				}
 				else{
 					String ip=request.getRemoteAddr();
-					 cBean.comUp("insert into rz(yh,sf,sj,ip) values('"+username+"','"+sf+"','"+date+"','"+ip+"')");
-					session.setAttribute("user", username); session.setAttribute("sf", sf); 
+					 cBean.comUp("insert into rz(users,identity,addtime,ip) values('"+username+"','"+identity+"','"+date+"','"+ip+"')");
+					session.setAttribute("user", username); session.setAttribute("identity", identity); 
 					request.getRequestDispatcher("admin/index.jsp").forward(request, response); 
 				}  
 			}
@@ -106,19 +106,19 @@ public class AdminServlet extends HttpServlet {
 				}
 			}
 			else if(method.equals("adminexit")){//退出登录
-				session.removeAttribute("user");  session.removeAttribute("sf");
+				session.removeAttribute("user");  session.removeAttribute("identity");
 				request.getRequestDispatcher("index.jsp").forward(request, response); 
 			}
-			else if(method.equals("addm")){      //增加管理人员
+			else if(method.equals("addmanager")){      //增加管理人员
 				String username = request.getParameter("username"); 
 				String password = request.getParameter("password"); 
 				String realname = request.getParameter("realname"); 
-				String sex = request.getParameter("sex"); 
+				String sex = request.getParameter("sex");
 				String age = request.getParameter("age");
 				String tel = request.getParameter("tel"); 
 				String str=cBean.getString("select id from admin where username='"+username+"'");
 				if(str==null){ 
-						int flag=cBean.comUp("insert into admin(username,password,realname,sex,age,tel,addtime,sf) " +
+						int flag=cBean.comUp("insert into admin(username,password,realname,sex,age,tel,addtime,identity) " +
 								"values('"+username+"','"+password+"','"+realname+"','"+sex+"','"+age+"','"+tel+"','"+date2+"','管理人员')");
 						if(flag == Constant.SUCCESS){ 
 							request.setAttribute("message", "操作成功！");
@@ -134,7 +134,7 @@ public class AdminServlet extends HttpServlet {
 					request.getRequestDispatcher("admin/systemmanager/manage_manager.jsp").forward(request, response);
 				} 
 			}
-			else if(method.equals("upm")){   //修改管理人员
+			else if(method.equals("upmanager")){   //修改管理人员
 				String id = request.getParameter("id");
 				String password = request.getParameter("password");
 				String realname = request.getParameter("realname"); 
@@ -151,7 +151,7 @@ public class AdminServlet extends HttpServlet {
 					request.getRequestDispatcher("admin/systemmanager/manage_manager.jsp").forward(request, response);
 				}
 			}
-			else if(method.equals("upm2")){     //修改管理人员
+			else if(method.equals("upmanagerinfo")){      //修改管理人员信息
 				String username=(String)session.getAttribute("user"); 
 				String realname = request.getParameter("realname"); 
 				String sex = request.getParameter("sex"); 
@@ -167,7 +167,7 @@ public class AdminServlet extends HttpServlet {
 					request.getRequestDispatcher("admin/manager/manager_info.jsp").forward(request, response);
 				}
 			}
-			else if(method.equals("delm")){      //删除管理人员
+			else if(method.equals("delmanager")){      //删除管理人员
 				String id = request.getParameter("id");  
 				int flag=cBean.comUp("delete from admin where id='"+id+"'");
 				if(flag == Constant.SUCCESS){ 
@@ -180,7 +180,7 @@ public class AdminServlet extends HttpServlet {
 				}
 			} 
 			
-			else if(method.equals("addxs")){    //增加健身教练
+			else if(method.equals("addcoach")){    //增加健身教练
 				String username = request.getParameter("username"); 
 				String password = request.getParameter("password"); 
 				String realname = request.getParameter("realname"); 
@@ -189,7 +189,7 @@ public class AdminServlet extends HttpServlet {
 				String tel = request.getParameter("tel"); 
 				String str=cBean.getString("select id from admin where username='"+username+"'");
 				if(str==null){ 
-						int flag=cBean.comUp("insert into admin(username,password,realname,sex,age,tel,addtime,sf) " +
+						int flag=cBean.comUp("insert into admin(username,password,realname,sex,age,tel,addtime,identity) " +
 								"values('"+username+"','"+password+"','"+realname+"','"+sex+"','"+age+"','"+tel+"','"+date2+"','健身教练')");
 						if(flag == Constant.SUCCESS){ 
 							request.setAttribute("message", "操作成功！");
@@ -205,7 +205,7 @@ public class AdminServlet extends HttpServlet {
 					request.getRequestDispatcher("admin/systemmanager/manage_coach.jsp").forward(request, response);
 				} 
 			}
-			else if(method.equals("upxs")){     // 管理员修改健身教练
+			else if(method.equals("upcoach")){     // 管理员修改健身教练
 				String id = request.getParameter("id");
 				String password = request.getParameter("password");
 				String realname = request.getParameter("realname"); 
@@ -222,7 +222,7 @@ public class AdminServlet extends HttpServlet {
 					request.getRequestDispatcher("admin/systemmanager/manage_coach.jsp").forward(request, response);
 				}
 			}
-			else if(method.equals("upxs2")){   //健身教练修改健身教练
+			else if(method.equals("upcoachinfo")){   //健身教练修改健身教练
 				String username=(String)session.getAttribute("user"); 
 				String realname = request.getParameter("realname"); 
 				String sex = request.getParameter("sex"); 
@@ -238,7 +238,7 @@ public class AdminServlet extends HttpServlet {
 					request.getRequestDispatcher("admin/coach/coach_info.jsp").forward(request, response);
 				}
 			}
-			else if(method.equals("delxs")){       //删除健身教练
+			else if(method.equals("delcoach")){       //删除健身教练
 				String id = request.getParameter("id");  
 				int flag=cBean.comUp("delete from admin where id='"+id+"'");
 				if(flag == Constant.SUCCESS){ 

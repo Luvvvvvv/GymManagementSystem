@@ -134,14 +134,14 @@ String message = (String)request.getAttribute("message");
        </tr>
 <%   
 	cb.setEVERYPAGENUM(12);
-	int cou = cb.getMessageCount("select count(*) from xm ");//得到信息总数			        
+	int cou = cb.getMessageCount("select count(*) from cards ");//得到信息总数
 	String page1=request.getParameter("page");
 	if(page1==null){
 		page1="1";
 	}
 	session.setAttribute("busMessageCount", cou + "");
 	session.setAttribute("busPage", page1);
-	List pagelist1 = cb.getMessage(Integer.parseInt(page1),"select * from xm order by id desc",17);
+	List pagelist1 = cb.getMessage(Integer.parseInt(page1),"select * from cards order by id desc",7);
 	session.setAttribute("qqq", pagelist1);
 	int pageCount = cb.getPageCount(); //得到页数  
 	session.setAttribute("busPageCount", pageCount + ""); 
@@ -153,12 +153,12 @@ String message = (String)request.getAttribute("message");
        <tr align="center">
          <td nowrap="nowrap"><%=i+1 %></td>
          <td nowrap="nowrap"><%=pagelist2.get(1).toString() %></td>
-         <td nowrap="nowrap"><%=pagelist2.get(7).toString() %></td>
-         <td nowrap="nowrap"><%=pagelist2.get(8).toString() %></td>
-         <td nowrap="nowrap"><a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(9).toString()%>">下载</a></td>
-         <td nowrap="nowrap"><%=pagelist2.get(10).toString() %></td>
-         <td nowrap="nowrap"><%=pagelist2.get(12).toString() %></td>
-         <td nowrap="nowrap"><a href="<%=basePath%>ComServlet?method=delxm5&id=<%=pagelist2.get(0).toString()%>">删除</a>
+         <td nowrap="nowrap"><%=pagelist2.get(2).toString() %></td>
+         <td nowrap="nowrap"><%=pagelist2.get(3).toString() %></td>
+         <td nowrap="nowrap"><a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(4).toString()%>">下载</a></td>
+         <td nowrap="nowrap"><%=pagelist2.get(5).toString() %></td>
+         <td nowrap="nowrap"><%=pagelist2.get(6).toString() %></td>
+         <td nowrap="nowrap"><a href="<%=basePath%>ComServlet?method=delcards1&id=<%=pagelist2.get(0).toString()%>">删除</a>
          </td>
        </tr>
 <% }} %>

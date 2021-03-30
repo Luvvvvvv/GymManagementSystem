@@ -55,7 +55,7 @@ String message = (String)request.getAttribute("message");
      <td><input type="text" name="word" class="span3" required/></td> 
      </tr> 
      <tr>
-     	<td class="text-center" colspan="2"><input type="submit" value="Ìá½»" class="btn btn-info  " style="width:100px;" /></td>
+     	<td class="text-center" colspan="2"><input type="submit" value="²éÑ¯" class="btn btn-info  " style="width:100px;" /></td>
      </tr>
      </table> 
 </form>
