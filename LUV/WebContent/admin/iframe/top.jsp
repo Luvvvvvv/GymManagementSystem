@@ -13,7 +13,7 @@
 <script type="text/javascript" src="<%=basePath %>images/js/laydate/laydate.js"></script>
 
 <div class="header">
-    <div class="header-right"><font color=#FFFFFF>用户：<%=admin %> &nbsp;&nbsp;身份：<%=identity %>
+    <div class="header-right">用户：<%=admin %> &nbsp;&nbsp;身份：<%=identity %>
     </font><a href="<%=basePath%>index.jsp" target="_top"> </a>
         <i class="icon-off icon-white"></i> <a onclick="if (confirm('确定要退出吗？')) return true; else return false;"
                                                href="<%=basePath %>AdminServlet?method=adminexit" target="_top">注销退出</a>

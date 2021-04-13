@@ -67,7 +67,7 @@ String message = (String)request.getAttribute("message");
                 </tr>
 
                 <tr>
-                    <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">课程节数：</td>
+                    <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">课程节数/已完成节数：</td>
                     <td><input type="text" name="number" class="span2" value="<%=number %>" required/></td>
                 </tr>
                 <%if (method.equals("upmembers")) { %>

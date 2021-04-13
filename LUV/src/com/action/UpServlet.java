@@ -19,9 +19,6 @@ public class UpServlet extends HttpServlet {
 
     private ServletConfig config;
 
-    /**
-     * Constructor of the object.
-     */
     public UpServlet() {
         super();
     }
@@ -34,40 +31,16 @@ public class UpServlet extends HttpServlet {
         return config;
     }
 
-    /**
-     * Destruction of the servlet. <br>
-     */
     public void destroy() {
-        super.destroy(); // Just puts "destroy" string in log
-        // Put your code here
+        super.destroy();
     }
 
-    /**
-     * The doGet method of the servlet. <br>
-     * <p>
-     * This method is called when a form has its tag value method equals to get.
-     *
-     * @param request  the request send by the client to the server
-     * @param response the response send by the server to the client
-     * @throws ServletException if an error occurred
-     * @throws IOException      if an error occurred
-     */
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         doPost(request, response);
     }
 
-    /**
-     * The doPost method of the servlet. <br>
-     * <p>
-     * This method is called when a form has its tag value method equals to post.
-     *
-     * @param request  the request send by the client to the server
-     * @param response the response send by the server to the client
-     * @throws ServletException if an error occurred
-     * @throws IOException      if an error occurred
-     */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -75,16 +48,16 @@ public class UpServlet extends HttpServlet {
         response.setContentType(Constant.CONTENTTYPE);
         String date2 = new SimpleDateFormat("yyyy-MM-dd").format(Calendar.getInstance().getTime());
         String method = "";
-        ;
+
         ComBean cb = new ComBean();
-        SmartUpload mySmartUpload = new SmartUpload();//init
+        SmartUpload mySmartUpload = new SmartUpload();
         int count = 0;
         HttpSession session = request.getSession();
         try {
             mySmartUpload.initialize(config, request, response);
             mySmartUpload.upload();
             method = mySmartUpload.getRequest().getParameter("method").trim();
-            if (method.equals("addfiles")) {// 上传文件
+            if (method.equals("addfiles")) {          // 上传文件
                 String username = (String) session.getAttribute("user");
                 String dw = cb.getString("select address from admin where username='" + username + "'");
                 String title = mySmartUpload.getRequest().getParameter("title");
@@ -100,7 +73,7 @@ public class UpServlet extends HttpServlet {
                     request.setAttribute("message", "操作失败！");
                     request.getRequestDispatcher("admin/manager/manage_file.jsp").forward(request, response);
                 }
-            } else if (method.equals("upfiles")) {//修改 文件
+            } else if (method.equals("upfiles")) {     //修改文件
                 String id = mySmartUpload.getRequest().getParameter("id");
                 String username = (String) session.getAttribute("user");
                 String dw = cb.getString("select address from admin where username='" + username + "'");
@@ -231,13 +204,7 @@ public class UpServlet extends HttpServlet {
         }
     }
 
-    /**
-     * Initialization of the servlet. <br>
-     *
-     * @throws ServletException if an error occure
-     */
     public void init() throws ServletException {
-        // Put your code here
-    }
 
+    }
 }

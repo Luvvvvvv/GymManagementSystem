@@ -53,7 +53,7 @@ String message = (String)request.getAttribute("message");
      </tr>
      <tr>
      <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
-     <td><input type="text" name="sex" class="span4" value="<%=sex %>" required/></td> 
+     <td><input type="text" name="sex" class="span4" value="<%=sex %>" readonly/></td>
      </tr>
      <tr>
      <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：</td>
@@ -61,7 +61,7 @@ String message = (String)request.getAttribute("message");
      </tr>
      <tr>
      <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">联系电话：</td>
-     <td><input type="text" name="tel" class="span4" value="<%=tel %>" pattern="[0-9]{11}" title="11位手机号码" required /></td> 
+     <td><input type="text" name="tel" class="span4" value="<%=tel %>" required/></td>
      </tr>
      	<td class="text-center" colspan="2"><input type="submit" value="确定" class="btn btn-info  " style="width:100px;" /></td>
      </tr>

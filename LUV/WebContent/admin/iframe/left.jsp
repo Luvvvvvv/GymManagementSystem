@@ -5,7 +5,7 @@
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
-<HEAD>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="<%=basePath %>/images/css/bootstrap.css"/>
     <link rel="stylesheet" href="<%=basePath %>/images/css/css.css"/>
@@ -13,7 +13,7 @@
     <script type="text/javascript" src="<%=basePath %>/images/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<%=basePath %>/images/js/sdmenu.js"></script>
     <script type="text/javascript" src="<%=basePath %>/images/js/laydate/laydate.js"></script>
-</HEAD>
+</head>
 <%
     String username = (String) session.getAttribute("user");
     String identity = (String) session.getAttribute("identity");
@@ -133,15 +133,7 @@
     </div>
 </div>
 <div class="Switch"></div>
-<script type="text/javascript">
-    $(document).ready(function (e) {
-        $(".Switch").click(function () {
-            $(".left").toggle();
 
-        });
-    });
-</script>
 </body>
 <%} %>
-
 </html>

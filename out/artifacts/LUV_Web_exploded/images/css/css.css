@@ -8,10 +8,10 @@ html, body {
 
 .header {
     position: absolute !important;
-    position: relative;
     width: 100%;
     height: 80px;
-    background: url(../img/top.png) no-repeat ;
+    margin-top: -2px;
+    background: url(../img/top.png) no-repeat;
 }
 
 #middle {
@@ -45,7 +45,7 @@ html, body {
 }
 
 .right_cont {
-    padding: 10px;
+    padding: 20px;
     width: auto;
 }
 
@@ -120,6 +120,9 @@ html, body {
 .header-right {
     float: right;
     padding-left: 50px;
+    margin-top: 5px;
+    color: white;
+    font-size: 15px;
 }
 
 .header-right a {
@@ -227,8 +230,8 @@ div.sdmenu div span {
     overflow: hidden;
     cursor: pointer;
     background: url(../img/left2.png);
-    font-size: 12px;
-    color: dimgrey;
+    font-size: 13px;
+    color: #539bc0;
     text-indent: 30px;
     font-weight: bold;
     font-family: "microsoft yahei";
@@ -250,7 +253,7 @@ div.sdmenu div {
 
 div.sdmenu div a {
     display: block;
-    color: #066;
+    color: black;
     background: url(../img/dumbbell.png) no-repeat 30px 4px;
     text-indent: 50px;
     padding: 2px 0;
@@ -275,19 +278,19 @@ div.sdmenu div a.current:hover {
 }
 
 .title_right {
-    font-size: 12px;
-    font-family: "microsoft yahei";
+    text-align: center;
+    font-size: 15px;
+    font-family: "emoji";
     border-bottom: 1px solid #ddd;
     margin-bottom: 20px;
     line-height: 30px;
 }
 
 .title_right strong {
-    border-bottom: 1px solid #F60;
+    border-bottom: 2px solid #5a5a56;
     line-height: 30px;
     display: inline-block;
-    padding: 0 10px;
-    margin-bottom: -1px;
+    padding: 0 30px;
 }
 
 .breadcrumb {

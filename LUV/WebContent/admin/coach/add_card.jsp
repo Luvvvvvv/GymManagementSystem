@@ -51,8 +51,8 @@ String message = (String)request.getAttribute("message");
     <div style="width:900px;margin:auto;">
         <form action="<%=basePath %>UpServlet" method="post" name="form1" enctype="multipart/form-data">
             <table class="table table-bordered">
-                <tr><input type="hidden" name="method" value="<%=method%>"/><input type="hidden" name="id"
-                                                                                   value="<%=id%>"/>
+                <tr><input type="hidden" name="method" value="<%=method%>"/>
+                    <input type="hidden" name="id" value="<%=id%>"/>
                     <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">姓名：</td>
                     <td><input type="text" name="name" class="span4" value="<%=name %>"/></td>
                 </tr>
@@ -76,7 +76,7 @@ String message = (String)request.getAttribute("message");
                 </tr>
                 <%} %>
                 <tr>
-                    <td class="text-center" colspan="2"><input type="submit" value="确定" class="btn btn-info  "
+                    <td class="text-center" colspan="2"><input type="submit" value="确定" class="btn btn-info"
                                                                style="width:100px;"/></td>
                 </tr>
             </table>
@@ -84,4 +84,4 @@ String message = (String)request.getAttribute("message");
     </div>
 </div>
 </body>
-    <%} %>
+<%} %>
