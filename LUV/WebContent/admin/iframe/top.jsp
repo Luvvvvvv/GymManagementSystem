@@ -5,12 +5,12 @@
     String admin = (String) session.getAttribute("user");
     String identity = (String) session.getAttribute("identity");
 %>
-<link rel="stylesheet" href="<%=basePath %>images/css/bootstrap.css"/>
-<link rel="stylesheet" href="<%=basePath %>images/css/css.css"/>
-<script type="text/javascript" src="<%=basePath %>images/js/jquery1.9.0.min.js"></script>
-<script type="text/javascript" src="<%=basePath %>images/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<%=basePath %>images/js/sdmenu.js"></script>
-<script type="text/javascript" src="<%=basePath %>images/js/laydate/laydate.js"></script>
+<link rel="stylesheet" href="<%=basePath %>assets/css/bootstrap.css"/>
+<link rel="stylesheet" href="<%=basePath %>assets/css/picstyle.css"/>
+<script type="text/javascript" src="<%=basePath %>assets/js/jquery1.9.0.min.js"></script>
+<script type="text/javascript" src="<%=basePath %>assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<%=basePath %>assets/js/sdmenu.js"></script>
+<script type="text/javascript" src="<%=basePath %>assets/js/laydate.js"></script>
 
 <div class="header">
     <div class="header-right">用户：<%=admin %> &nbsp;&nbsp;身份：<%=identity %>

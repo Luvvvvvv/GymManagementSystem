@@ -116,7 +116,7 @@ img {
     overflow: hidden;
 }
 
-/***** Top menu *****/
+/*main board*/
 .logo-gym {
     width: 60px;
     height: 60px;
@@ -195,6 +195,33 @@ ul.navbar-nav {
     padding: 120px 0 170px 0;
 }
 
+#menuDown {
+    list-style: none;
+    position: absolute;
+    line-height: 15px;
+    display: none;
+}
+
+.qrcode {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50px;
+    display: none;
+    right: 150px;
+    opacity: 0.5;
+}
+
+.qrcode1 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50px;
+    display: none;
+    right: -45px;
+    opacity: 0.5;
+}
+
 .top-content .text {
     padding-top: 120px;
     color: #fff;
@@ -225,6 +252,91 @@ ul.navbar-nav {
     margin-top: 35px;
 }
 
+/*countdown*/
+#countdown {
+    width: 450px;
+    height: 130px;
+    position: absolute;
+    top: 20px;
+    left: 400px;
+}
+
+#ctitle {
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+}
+
+#times {
+    font-size: 58px;
+    font-family: fantasy;
+    margin-left: 5px;
+    margin-top: 20px;
+    color: #ae8963;
+}
+
+#days {
+    float: left;
+    padding: 0 20px;
+    border-right: 2px dashed;
+}
+
+#hours {
+    float: left;
+    padding: 0 20px;
+    border-right: 2px dashed;
+}
+
+#minutes {
+    float: left;
+    padding: 0 20px;
+    border-right: 2px dashed;
+}
+
+#seconds {
+    float: left;
+    padding: 0 20px;
+}
+
+#timeunit {
+    font-size: 20px;
+    float: left;
+    position: relative;
+    margin-top: 15px;
+    color: #ffffff;
+    font-family: fantasy;
+}
+
+#day {
+    float: left;
+    padding: 0 20px;
+    position: relative;
+    left: 18px;
+}
+
+#hour {
+    float: left;
+    padding: 0 20px;
+    position: relative;
+    left: 26px;
+}
+
+#minute {
+    float: left;
+    padding: 0 20px;
+    position: relative;
+    left: 22px;
+}
+
+#second {
+    float: left;
+    padding: 0 20px;
+    position: relative;
+    left: 14px;
+}
+
+
+/*log in*/
 .form-top {
     overflow: hidden;
     padding: 0 25px 5px 25px;
@@ -272,27 +384,7 @@ ul.navbar-nav {
     text-align: center;
 }
 
-.qrcode {
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    top: 50px;
-    display: none;
-    right: 150px;
-    opacity: 0.5;
-}
-
-.qrcode1 {
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    top: 50px;
-    display: none;
-    right: -45px;
-    opacity: 0.5;
-}
-
-/***** Media queries *****/
+/**/
 
 @media (min-width: 992px) and (max-width: 1199px) {
 }

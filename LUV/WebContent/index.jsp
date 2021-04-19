@@ -28,25 +28,33 @@
         window.location = "lost.jsp";
     }
 </script>
+
+<%--<i class="fa fa-cny" style="position: absolute;width: 30px;height: 30px" id="arrow"></i>--%>
+
 <%--Top Banner--%>
 <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
     <div class="container">
         <div class="logo-gym">
-            <img src="images/img/logo.jpg">
+            <img src="images/logo.jpg">
         </div>
         <div class="collapse navbar-collapse" id="top-navbar-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#"><strong> LUV健身房管理系统 </strong></a>
+                    <a href="#" id="GMS"><strong> LUV健身房管理系统 </strong></a>
+                    <ul id="menuDown">
+                        <li><a href="#">意见建议</a></li>
+                        <li><a href="#">支持我们</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
                     <span class="li-text">
 								&nbsp;&nbsp;欢迎您联系:
                     </span>
                     <span class="li-social">
                         <a id="wechat"><i class="fa fa-wechat"></i></a>
-                        <img class="qrcode" src="images/img/QRcode.jpg">
+                        <img class="qrcode" src="images/QRcode.jpg">
                         <span>（点击显示二维码）</span>
                         <a id="qq"><i class="fa fa-qq"></i></a>
-                         <img class="qrcode1" src="images/img/QRcode1.jpg">
+                         <img class="qrcode1" src="images/QRcode1.jpg">
                     </span>
                 </li>
             </ul>
@@ -54,8 +62,25 @@
     </div>
 </nav>
 
-<%--Log In--%>
+<%--countDown--%>
+<div id="countdown">
+    <div id="ctitle">距离系统正式上线还有：</div>
+    <div id="times">
+        <div id="days"></div>
+        <div id="hours"></div>
+        <div id="minutes"></div>
+        <div id="seconds"></div>
+    </div>
+    <div id="timeunit">
+        <div id="day">DAYS</div>
+        <div id="hour">HOURS</div>
+        <div id="minute">MINUTES</div>
+        <div id="second">SECONDS</div>
+    </div>
+</div>
 
+
+<%--Log In--%>
 <div class="inner-bg">
     <div class="container">
         <div class="row">
@@ -76,14 +101,17 @@
                         <div class="form-group">
                             <label class="sr-only" for="form-first-name">登录帐号：
                             </label><input type=hidden name=method value="one"/>
-                            <input type="text" name="username" placeholder="请输入帐号"
+                            <input type="username" name="username" placeholder="请输入帐号"
                                    class="form-first-name form-control" id="form-first-name" required/>
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="form-last-name">登录密码：</label>
-                            <input type="text" name="password" placeholder="请输入密码"
+                            <input type="password" name="password" placeholder="请输入密码"
                                    class="form-last-name form-control" id="form-last-name" required/>
+                            <i class="fa fa-eye" id="eye"
+                               style="position: relative;float: right;top: -25px;right: 10px"></i>
                         </div>
+
                         <div class="form-group">
                             <label class="sr-only">用户身份：</label>
                             <input type="radio" name="identity" value="健身教练" checked="checked"> 健身教练

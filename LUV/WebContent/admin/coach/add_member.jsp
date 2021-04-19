@@ -8,12 +8,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="<%=basePath %>/images/css/bootstrap.css"/>
-    <link rel="stylesheet" href="<%=basePath %>/images/css/css.css"/>
-    <script type="text/javascript" src="<%=basePath %>/images/js/jquery1.9.0.min.js"></script>
-    <script type="text/javascript" src="<%=basePath %>/images/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="<%=basePath %>/images/js/sdmenu.js"></script>
-    <script type="text/javascript" src="<%=basePath %>/images/js/laydate/laydate.js"></script>
+    <link rel="stylesheet" href="<%=basePath %>/assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/sdmenu.js"></script>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/laydate.js"></script>
 
 
 </head>
@@ -68,7 +68,7 @@ String message = (String)request.getAttribute("message");
 
                 <tr>
                     <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">课程节数/已完成节数：</td>
-                    <td><input type="text" name="number" class="span2" value="<%=number %>" required/></td>
+                    <td><input type="text" name="number" class="span    background: #fff url(../img/left_bg.png) repeat-y right;2" value="<%=number %>" required/></td>
                 </tr>
                 <%if (method.equals("upmembers")) { %>
                 <tr>

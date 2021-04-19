@@ -8,12 +8,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="<%=basePath %>images/css/bootstrap.css"/>
-    <link rel="stylesheet" href="<%=basePath %>images/css/css.css"/>
-    <script type="text/javascript" src="<%=basePath %>images/js/jquery1.9.0.min.js"></script>
-    <script type="text/javascript" src="<%=basePath %>images/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="<%=basePath %>images/js/sdmenu.js"></script>
-    <script type="text/javascript" src="<%=basePath %>images/js/laydate/laydate.js"></script>
+    <link rel="stylesheet" href="<%=basePath %>assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="<%=basePath %>assets/css/picstyle.css"/>
+    <script type="text/javascript" src="<%=basePath %>assets/js/jquery1.9.0.min.js"></script>
+    <script type="text/javascript" src="<%=basePath %>assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<%=basePath %>assets/js/sdmenu.js"></script>
+    <script type="text/javascript" src="<%=basePath %>assets/js/laydate.js"></script>
 </head>
 <script language="javascript">
     function top2() {
@@ -47,7 +47,7 @@
         if (page >= pageCount) {
             alert("已至最后一页");
         } else {
-            form3.action = "<%=basePath%>admin/mb/index.jsp?page=" + (page + 1);
+            form3.action = "<%=basePath%>admin/coach/manage_card.jsp?page=" + (page + 1);
             form3.submit();
         }
     }
@@ -83,7 +83,6 @@
 
     }
 
-    //****判断是否是Number.
     function fIsNumber(sV, sR) {
         var sTmp;
         if (sV.length == 0) {
@@ -127,7 +126,7 @@ String message = (String)request.getAttribute("message");
     <div style="width:100%;margin:auto;">
         <form action="" method="post" name="form3">
             <table class="table table-bordered table-striped table-hover">
-                <tbody>
+                <tbody id="card">
                 <tr align="center">
                     <td nowrap="nowrap"><strong>序号</strong></td>
                     <td nowrap="nowrap"><strong>姓名</strong></td>
@@ -139,7 +138,7 @@ String message = (String)request.getAttribute("message");
                     <td width="100" nowrap="nowrap"><strong>操作</strong></td>
                 </tr>
                 <%
-                    cb.setEVERYPAGENUM(12);
+                    cb.setEVERYPAGENUM(9);
                     int cou = cb.getMessageCount("select count(*) from cards where users='" + username + "'");   //得到信息总数
                     String page1 = request.getParameter("page");
                     if (page1 == null) {
@@ -163,7 +162,7 @@ String message = (String)request.getAttribute("message");
                     </td>
                     <td nowrap="nowrap"><%=pagelist2.get(2).toString() %>
                     </td>
-                    <td nowrap="nowrap"><%=pagelist2.get(3).toString() %>
+                    <td nowrap="nowrap" id="endTime"><%=pagelist2.get(3).toString() %>
                     </td>
                     <td nowrap="nowrap"><a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(4).toString()%>">下载</a>
                     </td>
@@ -199,5 +198,36 @@ String message = (String)request.getAttribute("message");
         </form>
     </div>
 </div>
+<div>
+    <div style="width: 500px; position: relative;left: 400px;">
+        <span style="font-size: 20px;">健身卡<strong style="color: red">小于7天</strong>提示：</span>
+        <div id="willBeOutdate"
+             style=" border: 3px solid grey;font-size: 15px;position: absolute;display: inline-block;padding: 10px">
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        var nowTime = new Date();
+        var nowTimes = nowTime.getTime().valueOf()
+        var timeArr = [];
+        $('#card tr').each(function () {
+            var endTime = $(this).children('td').eq(3).text();
+            var endTimes = Date.parse(endTime);
+            var timeLeft = endTimes - nowTimes;
+            var timeLeftday = parseInt(timeLeft / 1000 / 60 / 60 / 24);
+            timeArr.push(timeLeftday);
+        });
+        var arrLength = timeArr.length - 1;
+        var time = timeArr.slice(1, arrLength);
+        for (var i = 0; i < time.length; i++) {
+
+            if (time[i] < 7) {
+                console.log((i + 1) + '号健身卡,' + '剩余' + time[i] + '天');
+                document.getElementById('willBeOutdate').innerHTML += (i + 1) + '号健身卡&nbsp;&nbsp;-----------------&nbsp;&nbsp;' + '剩余' + time[i] + '天<br>';
+            }
+        }
+    });
+</script>
 </body>
     <%} %>

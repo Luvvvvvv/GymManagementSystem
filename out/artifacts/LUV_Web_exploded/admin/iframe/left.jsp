@@ -7,12 +7,12 @@
 <HTML>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="<%=basePath %>/images/css/bootstrap.css"/>
-    <link rel="stylesheet" href="<%=basePath %>/images/css/css.css"/>
-    <script type="text/javascript" src="<%=basePath %>/images/js/jquery1.9.0.min.js"></script>
-    <script type="text/javascript" src="<%=basePath %>/images/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="<%=basePath %>/images/js/sdmenu.js"></script>
-    <script type="text/javascript" src="<%=basePath %>/images/js/laydate/laydate.js"></script>
+    <link rel="stylesheet" href="<%=basePath %>/assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/sdmenu.js"></script>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/laydate.js"></script>
 </head>
 <%
     String username = (String) session.getAttribute("user");
@@ -79,15 +79,15 @@
         </div>
 
         <div class="collapsed">
-            <span>反馈信息管理</span>
-            <a href="<%=basePath %>/admin/manager/manage_feedback1.jsp" target="MainFrame">反馈信息管理</a>
-            <a href="<%=basePath %>/admin/manager/search_feedback.jsp" target="MainFrame">反馈信息查询</a>
-        </div>
-
-        <div class="collapsed">
             <span>文件信息管理</span>
             <a href="<%=basePath %>/admin/manager/add_file.jsp?method=addfiles" target="MainFrame">增加文件信息</a>
             <a href="<%=basePath %>/admin/manager/manage_file.jsp" target="MainFrame">文件信息管理</a>
+        </div>
+
+        <div class="collapsed">
+            <span>反馈信息管理</span>
+            <a href="<%=basePath %>/admin/manager/manage_feedback1.jsp" target="MainFrame">反馈信息管理</a>
+            <a href="<%=basePath %>/admin/manager/search_feedback.jsp" target="MainFrame">反馈信息查询</a>
         </div>
 
         <%} else if (identity.equals("健身教练")) { %>
@@ -112,13 +112,13 @@
         </div>
 
         <div class="collapsed">
-            <span>通知</span>
+            <span>通知文件管理</span>
             <a href="<%=basePath %>/admin/coach/notice.jsp" target="MainFrame">通知信息</a>
             <a href="<%=basePath %>/admin/coach/file.jsp" target="MainFrame">私教课程表</a>
         </div>
 
         <div class="collapsed">
-            <span>反馈信息</span>
+            <span>反馈信息管理</span>
             <a href="<%=basePath %>/admin/coach/add_feedback.jsp?method=addfeedback" target="MainFrame">提交反馈信息</a>
             <a href="<%=basePath %>/admin/coach/manage_feedback.jsp" target="MainFrame">反馈信息管理</a>
         </div>

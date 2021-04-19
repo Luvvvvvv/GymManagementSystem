@@ -8,12 +8,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="<%=basePath %>/images/css/bootstrap.css"/>
-    <link rel="stylesheet" href="<%=basePath %>/images/css/css.css"/>
-    <script type="text/javascript" src="<%=basePath %>/images/js/jquery1.9.0.min.js"></script>
-    <script type="text/javascript" src="<%=basePath %>/images/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="<%=basePath %>/images/js/sdmenu.js"></script>
-    <script type="text/javascript" src="<%=basePath %>/images/js/laydate/laydate.js"></script>
+    <link rel="stylesheet" href="<%=basePath %>/assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/sdmenu.js"></script>
+    <script type="text/javascript" src="<%=basePath %>/assets/js/laydate.js"></script>
 </head>
 <script language="javascript">
     function top2() {
@@ -123,7 +123,7 @@ String message = (String)request.getAttribute("message");
 %>
 <body>
 <div class="right_cont">
-    <div class="title_right"><strong>科研成果管理</strong></div>
+    <div class="title_right"><strong>私教课程查询</strong></div>
     <div style="width:100%;margin:auto;">
         <form action="" method="post" name="form3">
             <table class="table table-bordered table-striped table-hover">
@@ -140,7 +140,7 @@ String message = (String)request.getAttribute("message");
                     <td width="80" nowrap="nowrap"><strong>操作</strong></td>
                 </tr>
                 <% String word = Common.toChineseAndTrim(request.getParameter("word"));
-                    cb.setEVERYPAGENUM(12);
+                    cb.setEVERYPAGENUM(9);
                     int cou = cb.getMessageCount("select count(*) from members where name like '%" + word + "%' and users='" + username + "'");//得到信息总数
                     String page1 = request.getParameter("page");
                     if (page1 == null) {
