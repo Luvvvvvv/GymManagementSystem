@@ -1,0 +1,141 @@
+html, body {
+    padding: 0px !important;
+    padding: 100px 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.header {
+    position: absolute !important;
+    width: 100%;
+    height: 80px;
+    margin-top: -2px;
+    background: url(../../images/top.png);
+}
+
+.left {
+    float: left;
+    width: 183px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    position: relative;
+}
+
+.right_cont {
+    padding: 20px;
+    width: auto;
+}
+
+.Switch {
+    float: left;
+    width: 1px;
+    height: 1px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background: #666464;
+    line-height: 30px;
+    text-align: center;
+    color: #ccc;
+}
+
+.logo {
+    float: left;
+    width: 365PX;
+    height: 50px;
+}
+
+
+.logo img {
+    margin: 6px 0 0 25px
+}
+
+.header-right {
+    float: right;
+    padding-left: 50px;
+    margin-top: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.header-right a {
+    color: #fff;
+    line-height: 60px;
+    margin-right: 20px;
+}
+
+div.sdmenu {
+    font-size: 12px;
+    background: #ccc;
+    color: #fff;
+}
+
+div.sdmenu div {
+    overflow: hidden;
+    margin-top: -1px;
+    background: #fff url(../../images/left_bg.png) repeat-y right;
+}
+
+div.sdmenu div.collapsed {
+    height: 30px;
+}
+
+div.sdmenu div span {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(../../images/left2.png);
+    font-size: 13px;
+    color: #539bc0;
+    text-indent: 30px;
+    font-weight: bold;
+    font-family: "microsoft yahei";
+}
+
+div.sdmenu div.collapsed span {
+    background: #ccc;
+    background: url(../../images/left.png);
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    color: #333;
+    text-indent: 30px;
+    font-weight: bold;
+}
+
+div.sdmenu div a {
+    display: block;
+    color: black;
+    background: url(../../images/dumbbell.png) no-repeat 30px 4px;
+    text-indent: 50px;
+    padding: 2px 0;
+}
+
+div.sdmenu div a:hover {
+    background-color: #e2e2e2;
+    color: #333;
+    text-decoration: none;
+}
+
+.title_right {
+    text-align: center;
+    font-size: 15px;
+    font-family: "emoji";
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.title_right strong {
+    border-bottom: 2px solid #5a5a56;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 30px;
+}
