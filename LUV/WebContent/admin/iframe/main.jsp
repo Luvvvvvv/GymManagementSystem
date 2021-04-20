@@ -38,8 +38,6 @@ String message = (String)request.getAttribute("message");
 <div class="right_cont">
     <div class="title_right"><strong>欢迎统使用LUV健身房管理系统！</strong></div>
     <div align="center"><img width="85%" src="../../images/gym.jpg" alt=""/></div>
-<%--    <div style="width:900px;margin:auto;">--%>
-<%--    </div>--%>
 </div>
 </body>
     <%} %>

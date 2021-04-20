@@ -173,7 +173,8 @@ String message = (String)request.getAttribute("message");
                     </td>
                     <td nowrap="nowrap"><a
                             href="<%=basePath%>admin/systemmanager/add_manager.jsp?method=upmanager&id=<%=pagelist2.get(0).toString()%>">ÐÞ¸Ä</a>
-                        <a href="<%=basePath%>AdminServlet?method=delmanager&id=<%=pagelist2.get(0).toString()%>">É¾³ý</a></td>
+                        <a href="<%=basePath%>AdminServlet?method=delmanager&id=<%=pagelist2.get(0).toString()%>">É¾³ý</a>
+                    </td>
                 </tr>
                 <% }
                 } %>

@@ -14,11 +14,10 @@
 
 <div class="header">
     <div class="header-right">用户：<%=admin %> &nbsp;&nbsp;身份：<%=identity %>
-    </font><a href="<%=basePath%>index.jsp" target="_top"> </a>
+        <a href="<%=basePath%>index.jsp" target="_top"></a>
+        <img style="position: absolute;left: 20px" src="${pageContext.request.contextPath}/images/bodylogo.png">
         <i class="icon-off icon-white"></i> <a onclick="if (confirm('确定要退出吗？')) return true; else return false;"
                                                href="<%=basePath %>AdminServlet?method=adminexit" target="_top">注销退出</a>
-        <div id="modal-container-973558" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel"
-             aria-hidden="true" style="width:300px; margin-left:-150px; top:30%">
-        </div>
     </div>
+</div>
 </div>

@@ -100,7 +100,7 @@ $(function () {
     });
 
     $("#qq").click(function () {
-        $(".qrcode1").slideToggle(1000);
+        $(".qrcode1").fadeToggle(1000);
     });
 
 

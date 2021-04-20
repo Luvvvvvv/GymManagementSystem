@@ -202,6 +202,7 @@ ul.navbar-nav {
     display: none;
 }
 
+
 .qrcode {
     width: 120px;
     height: 120px;
@@ -311,28 +312,27 @@ ul.navbar-nav {
     float: left;
     padding: 0 20px;
     position: relative;
-    left: 18px;
+    left: 10px;
 }
 
 #hour {
     float: left;
     padding: 0 20px;
     position: relative;
-    left: 26px;
+    left: 16px;
 }
 
 #minute {
     float: left;
     padding: 0 20px;
     position: relative;
-    left: 22px;
+    left: 14px;
 }
 
 #second {
     float: left;
     padding: 0 20px;
     position: relative;
-    left: 14px;
 }
 
 

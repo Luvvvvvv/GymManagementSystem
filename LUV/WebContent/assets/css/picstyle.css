@@ -118,22 +118,10 @@ div.sdmenu div a {
     padding: 2px 0;
 }
 
-div.sdmenu div a.current {
-    background: #38A3D5 url(../../images/dumbbell.png) no-repeat 27px 4px;
-    border-left: 3px solid #F65241;
-    color: #fff;
-}
-
 div.sdmenu div a:hover {
     background-color: #e2e2e2;
     color: #333;
     text-decoration: none;
-}
-
-div.sdmenu div a.current:hover {
-    background: #38A3D5 url(../../images/dumbbell.png) no-repeat 27px 4px;
-    border-left: 3px solid #F65241;
-    color: #fff;
 }
 
 .title_right {

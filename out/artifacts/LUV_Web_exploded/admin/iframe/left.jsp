@@ -49,6 +49,7 @@
 
         <div class="collapsed">
             <span>系统数据管理</span>
+            <a href="<%=basePath %>/admin/systemmanager/manage_card1.jsp" target="MainFrame">办卡时长统计</a>
             <a href="<%=basePath %>/admin/systemmanager/backup.jsp" target="MainFrame">数据备份管理</a>
             <a href="<%=basePath %>/admin/systemmanager/log.jsp?method=addcoach" target="MainFrame">系统日志管理</a>
         </div>
@@ -95,6 +96,7 @@
             <span>个人信息管理</span>
             <a href="<%=basePath %>/admin/systemmanager/modifypsw.jsp" target="MainFrame">修改密码</a>
             <a href="<%=basePath %>/admin/coach/coach_info.jsp" target="MainFrame">个人信息</a>
+            <a href="<%=basePath %>/admin/coach/BMI_Calculator.jsp" target="MainFrame">BMI计算器</a>
         </div>
 
         <div class="collapsed">

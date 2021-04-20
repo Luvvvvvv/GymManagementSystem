@@ -199,7 +199,7 @@ String message = (String)request.getAttribute("message");
     </div>
 </div>
 <div>
-    <div style="width: 500px; position: relative;left: 400px;">
+    <div style="width: 500px; position: relative;left: 380px;">
         <span style="font-size: 20px;">健身卡<strong style="color: red">小于7天</strong>提示：</span>
         <div id="willBeOutdate"
              style=" border: 3px solid grey;font-size: 15px;position: absolute;display: inline-block;padding: 10px">

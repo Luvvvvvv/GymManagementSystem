@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" contentType="text/html;charset=gb2312" %>
-<%@ include file="iframe/head.jsp" %>
+<%@ include file="head.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,10 +51,19 @@
                     </span>
                     <span class="li-social">
                         <a id="wechat"><i class="fa fa-wechat"></i></a>
-                        <img class="qrcode" src="images/QRcode.jpg">
+                        <div class="qrcode" style="position: absolute">
+                            <span style="position: absolute; width: 0; height: 0; border: 10px solid transparent;
+                            border-bottom-color: white; top: -20px; left: 50px"></span>
+                            <img src="images/QRcode.jpg">
+                        </div>
                         <span>（点击显示二维码）</span>
                         <a id="qq"><i class="fa fa-qq"></i></a>
-                         <img class="qrcode1" src="images/QRcode1.jpg">
+                        <div class="qrcode1" style="position: absolute">
+                            <span style="position: absolute; width: 0; height: 0; border: 10px solid transparent;
+                            border-bottom-color: #ececec; top: -20px; left: 47px"></span>
+                            <img src="images/QRcode1.jpg">
+                        </div>
+
                     </span>
                 </li>
             </ul>
@@ -79,7 +88,6 @@
     </div>
 </div>
 
-
 <%--Log In--%>
 <div class="inner-bg">
     <div class="container">
@@ -92,7 +100,7 @@
                         <p>请用正确的用户身份完成登陆：</p>
                     </div>
                     <div class="form-top-right">
-                        <i class="fa fa-gear"></i>
+                        <i class="fa fa-users"></i>
                     </div>
                 </div>
                 <div class="form-bottom">

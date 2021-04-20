@@ -30,9 +30,6 @@ public class DBO {
      */
     public void close() {
         try {
-
-
-            //	connMgr.freeConnection("java", conn);
             conn.close();
             System.out.println("释放连接");
         } catch (SQLException ex) {
@@ -45,7 +42,6 @@ public class DBO {
      */
     public ResultSet executeQuery(String sql) throws SQLException {
         ResultSet rs = null;
-
 
         rs = stmt.executeQuery(sql);
         System.out.println("执行查询");
