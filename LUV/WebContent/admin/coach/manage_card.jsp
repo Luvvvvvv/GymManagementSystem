@@ -164,15 +164,19 @@ String message = (String)request.getAttribute("message");
           </td>
           <td nowrap="nowrap" id="endTime"><%=pagelist2.get(3).toString() %>
           </td>
-          <td nowrap="nowrap"><a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(4).toString()%>">下载</a>
+          <td nowrap="nowrap">
+            <a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(4).toString()%>"
+               style="color: #ffffff;text-decoration: none;background-color: #66b1ff;padding: 3px 4px 3px 3px;border-radius: 5px;">下载</a>
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(5).toString() %>
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(6).toString() %>
           </td>
           <td nowrap="nowrap">
-            <a href="<%=basePath%>admin/coach/add_card.jsp?method=upcards&id=<%=pagelist2.get(0).toString()%>">修改</a>
-            <a href="<%=basePath%>ComServlet?method=delcards&id=<%=pagelist2.get(0).toString()%>">删除</a>
+            <a href="<%=basePath%>admin/coach/add_card.jsp?method=upcards&id=<%=pagelist2.get(0).toString()%>"
+               style="color: white;background-color: #85ce61;padding: 3px;border-radius: 5px;text-decoration: none;">修改</a>
+            <a href="<%=basePath%>ComServlet?method=delcards&id=<%=pagelist2.get(0).toString()%>"
+               style="color: white;background-color: #f56c6c;padding: 3px;border-radius: 5px;text-decoration: none;">删除</a>
           </td>
         </tr>
         <% }
@@ -199,71 +203,25 @@ String message = (String)request.getAttribute("message");
   </div>
 </div>
 
-<div style="width: 500px; position: relative;left: 580px;">
-  <div style="position: absolute; left: -342px">
-    <span style="font-size: 20px;">当前日期与时间:</span>
-    <div id="timeNow"
-         style=" border: 3px solid grey;font-size: 15px;position: absolute;
-         display: inline-block;padding: 10px;width: 120px;margin-left: 12px;border-radius: 20px;background: antiquewhite;">
+<div style="width: 500px; position: relative;left: 50%;">
+  <div style="position: absolute; left: -250px">
+    <span style="font-size: 20px;font-weight: bold;position: relative;left: -5px">当前日期与时间栏</span>
+    <div style="border: 3px solid grey;font-size: 16px;position: absolute;display: block;padding: 10px;width: 120px;
+         margin-top: 18px;border-radius: 20px;background: antiquewhite;text-align: center;font-weight: 600;">
+      <div id="yearNow"></div>
+      <div style="margin:3px 0 3px 0" id="dateNow"></div>
+      <div id="timeNow"></div>
     </div>
   </div>
-  <span style="font-size: 20px;">健身卡<strong style="color: red">小于7天</strong>提示：</span>
-  <div id="willBeOutdate"
-       style=" border: 3px solid grey;font-size: 15px;position: absolute;display: inline-block;padding: 10px;border-radius: 20px;background: antiquewhite;">
+  <div>
+    <span style="font-size: 20px;font-weight: bold;position: relative;left: 32px">健身卡<strong
+            style="color: red">小于7天</strong>提示栏</span>
+    <div id="willBeOutdate" style="border: 3px solid grey;font-size: 15px;position: absolute;display: block;
+    padding: 12px;border-radius: 20px;background: antiquewhite;font-weight: 600;margin-top: 18px;">
+    </div>
   </div>
 </div>
 
-<script type="text/javascript">
-  $(function () {
-    var nowTime = new Date();
-    var nowTimes = nowTime.getTime().valueOf()
-    var timeArr = [];
-
-    $('#card tr').each(function () {
-      var endTime = $(this).children('td').eq(3).text();
-      var endTimes = Date.parse(endTime);
-      var timeLeft = endTimes - nowTimes;
-      var timeLeftday = parseInt(timeLeft / 1000 / 60 / 60 / 24);
-      timeArr.push(timeLeftday);
-    });
-    var arrLength = timeArr.length - 1;
-    var time = timeArr.slice(1, arrLength);
-    for (var i = 0; i < time.length; i++) {
-      if (time[i] < 7) {
-        console.log((i + 1) + '号健身卡,' + '剩余' + time[i] + '天');
-        document.getElementById('willBeOutdate').innerHTML += (i + 1) + '号健身卡&nbsp;&nbsp;-----------------&nbsp;&nbsp;' + '剩余' + time[i] + '天<br>';
-      }
-    }
-
-    function dateFormat(fmt, date) {
-      let ret;
-      const opt = {
-        "Y+": date.getFullYear().toString(),        // 年
-        "m+": (date.getMonth() + 1).toString(),     // 月
-        "d+": date.getDate().toString(),            // 日
-        "H+": date.getHours().toString(),           // 时
-        "M+": date.getMinutes().toString(),         // 分
-        "S+": date.getSeconds().toString()          // 秒
-      };
-      for (let k in opt) {
-        ret = new RegExp("(" + k + ")").exec(fmt);
-        if (ret) {
-          fmt = fmt.replace(ret[1], (ret[1].length == 1) ? (opt[k]) : (opt[k].padStart(ret[1].length, "0")))
-        }
-        ;
-      }
-      ;
-      return fmt;
-    }
-
-    setInterval(function () {
-      var date = new Date();
-      var now = dateFormat('YYYY年mm月dd日' + 'HH:MM:SS', date)
-      var txt = document.getElementById('timeNow');
-      txt.innerHTML = now;
-    }, 1000);
-
-  });
-</script>
+<script src="<%=basePath %>/assets/function/cardcheck.js"></script>
 </body>
   <%} %>

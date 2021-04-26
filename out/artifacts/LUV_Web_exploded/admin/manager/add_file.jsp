@@ -44,7 +44,7 @@ String message = (String)request.getAttribute("message");
 %>
 <body>
 <div class="right_cont">
-  <div class="title_right"><strong>文件信息添加</strong></div>
+  <div class="title_right"><strong>文件信息增加</strong></div>
   <div style="width:60%; margin:auto;">
     <form action="<%=basePath %>UpServlet" method="post" name="form1" enctype="multipart/form-data">
       <table class="table table-bordered">
@@ -94,7 +94,7 @@ String message = (String)request.getAttribute("message");
         </tr>
         <tr>
           <td class="text-center" colspan="2">
-            <input type="submit" value="确定" class="btn btn-info" style="width:100px;"/>
+            <input type="submit" value="确定" class="btn btn-info" style="width:100px;background: #6eacff"/>
           </td>
         </tr>
       </table>

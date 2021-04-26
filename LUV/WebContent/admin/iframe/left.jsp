@@ -103,7 +103,7 @@
              src="<%=basePath %>/images/systemicon/muscle.jpg">
         通知信息管理
       </span>
-      <a href="<%=basePath %>/admin/manager/add_notice.jsp?method=addnotice" target="MainFrame">增加通知信息</a>
+      <a href="<%=basePath %>/admin/manager/add_notice.jsp?method=addnotice" target="MainFrame">发布通知信息</a>
       <a href="<%=basePath %>/admin/manager/manage_notice.jsp" target="MainFrame">通知信息管理</a>
     </div>
 
@@ -113,7 +113,7 @@
              src="<%=basePath %>/images/systemicon/muscle.jpg">
         文件信息管理
       </span>
-      <a href="<%=basePath %>/admin/manager/add_file.jsp?method=addfiles" target="MainFrame">增加文件信息</a>
+      <a href="<%=basePath %>/admin/manager/add_file.jsp?method=addfiles" target="MainFrame">发布文件信息</a>
       <a href="<%=basePath %>/admin/manager/manage_file.jsp" target="MainFrame">文件信息管理</a>
     </div>
 

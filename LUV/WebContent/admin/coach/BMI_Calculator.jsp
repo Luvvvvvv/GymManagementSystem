@@ -76,7 +76,7 @@ String message = (String)request.getAttribute("message");
         <tr style="height: 28px;font-size: 14px">
           <td style="text-align: right; background-color: #f1f1f1; width: 40%">
             <img style="position: relative; width: 20px; left: -22px;"
-                 src="<%=basePath %>/images/systemicon/name.jpg">
+                 src="<%=basePath %>/images/systemicon/height.jpg">
             身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高(cm)：
           </td>
           <td>
@@ -86,7 +86,7 @@ String message = (String)request.getAttribute("message");
         <tr style="height: 28px;font-size: 14px">
           <td style="text-align: right; background-color: #f1f1f1; width: 40%">
             <img style="position: relative; width: 20px; left: -22px;"
-                 src="<%=basePath %>/images/systemicon/name.jpg">
+                 src="<%=basePath %>/images/systemicon/weight.jpg">
             体&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重(k&nbsp;g)：
           </td>
           <td>
@@ -95,13 +95,13 @@ String message = (String)request.getAttribute("message");
         </tr>
         <tr>
           <td class="text-center" colspan="2">
-            <input onclick="Cal(this.form)" type="button" value="开始计算" class="btn btn-info" style="width:100px;"/>
+            <input onclick="Cal(this.form)" type="button" value="开始计算" class="btn btn-info" style="width:100px;background: #6eacff"/>
           </td>
         </tr>
         <tr style="height: 28px;font-size: 14px">
           <td style="text-align: right; background-color: #f1f1f1; width: 40%">
-            <img style="position: relative; width: 20px; left: -22px;"
-                 src="<%=basePath %>/images/systemicon/name.jpg">
+            <img style="position: relative; width: 24px; left: -22px;"
+                 src="<%=basePath %>/images/systemicon/ideaweight.jpg">
             理想&nbsp;体重(k&nbsp;g)：
           </td>
           <td>
@@ -110,8 +110,8 @@ String message = (String)request.getAttribute("message");
         </tr>
         <tr style="height: 28px;font-size: 14px">
           <td width="40%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">
-            <img style="position: relative; width: 20px; left: -22px;"
-                 src="<%=basePath %>/images/systemicon/name.jpg">
+            <img style="position: relative; width: 24px; left: -22px;"
+                 src="<%=basePath %>/images/systemicon/bmi.jpg">
             B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I：
           </td>
           <td>
@@ -120,13 +120,13 @@ String message = (String)request.getAttribute("message");
         </tr>
         <tr style="height: 28px;font-size: 14px">
           <td style="text-align: right; background-color: #f1f1f1; width: 40%">
-            <img style="position: relative; width: 20px; left: -22px;"
-                 src="<%=basePath %>/images/systemicon/name.jpg">
+            <img style="position: relative; width: 26px; left: -22px;"
+                 src="<%=basePath %>/images/systemicon/conclusion.jpg">
             结&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;论：
           </td>
           <td>
             <span id="conclusion" type="text" class="span3"
-                  style="border: 3px solid rgb(204, 204, 204);width: 227px;height: 24px;margin-left: 0px"></span>
+                  style="border: 3px solid #ff9e9e;width: 51%;height: 24px;margin-left: 0px;"></span>
           </td>
         </tr>
       </table>

@@ -128,8 +128,8 @@ String message = (String)request.getAttribute("message");
         <tr style="text-align: center;height: 40px;font-size: 16px;">
           <td width="80px"><strong>序号</strong></td>
           <td width="150px"><strong>文件名称</strong></td>
-          <td width="100px"><strong>下载文件</strong></td>
           <td width="300px"><strong>文件说明</strong></td>
+          <td width="100px"><strong>下载文件</strong></td>
           <td width="120px"><strong>发布时间</strong></td>
           <td width="80px"><strong>上传用户</strong></td>
           <td width="100px"><strong>操作</strong></td>
@@ -157,17 +157,21 @@ String message = (String)request.getAttribute("message");
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(1).toString() %>
           </td>
-          <td nowrap="nowrap"><a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(2).toString()%>">下载</a>
-          </td>
           <td nowrap="nowrap"><%=pagelist2.get(3).toString() %>
+          </td>
+          <td nowrap="nowrap">
+            <a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(2).toString()%>"
+               style="color: #ffffff;text-decoration: none;background-color: #66b1ff;padding: 3px 4px 3px 3px;border-radius: 5px;">下载</a>
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(4).toString() %>
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(5).toString() %>
           </td>
           <td nowrap="nowrap">
-            <a href="<%=basePath%>admin/manager/add_file.jsp?method=upfiles&id=<%=pagelist2.get(0).toString()%>">修改</a>
-            <a href="<%=basePath%>ComServlet?method=delfiles&id=<%=pagelist2.get(0).toString()%>">删除</a>
+            <a href="<%=basePath%>admin/manager/add_file.jsp?method=upfiles&id=<%=pagelist2.get(0).toString()%>"
+               style="color: white;background-color: #85ce61;padding: 3px;border-radius: 5px;text-decoration: none;">修改</a>
+            <a href="<%=basePath%>ComServlet?method=delfiles&id=<%=pagelist2.get(0).toString()%>"
+               style="color: white;background-color: #f56c6c;padding: 3px;border-radius: 5px;text-decoration: none;">删除</a>
           </td>
         </tr>
         <% }

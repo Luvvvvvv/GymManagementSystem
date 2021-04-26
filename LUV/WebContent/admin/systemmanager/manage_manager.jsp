@@ -168,9 +168,11 @@ String message = (String)request.getAttribute("message");
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(7).toString() %>
           </td>
-          <td nowrap="nowrap"><a
-                  href="<%=basePath%>admin/systemmanager/add_manager.jsp?method=upmanager&id=<%=pagelist2.get(0).toString()%>">ÐÞ¸Ä</a>
-            <a href="<%=basePath%>AdminServlet?method=delmanager&id=<%=pagelist2.get(0).toString()%>">É¾³ý</a>
+          <td nowrap="nowrap">
+            <a href="<%=basePath%>admin/systemmanager/add_manager.jsp?method=upmanager&id=<%=pagelist2.get(0).toString()%>"
+               style="color: white;background-color: #85ce61;padding: 3px;border-radius: 5px;text-decoration: none;">ÐÞ¸Ä</a>
+            <a href="<%=basePath%>AdminServlet?method=delmanager&id=<%=pagelist2.get(0).toString()%>"
+               style="color: white;background-color: #f56c6c;padding: 3px;border-radius: 5px;text-decoration: none;">É¾³ý</a>
           </td>
         </tr>
         <% }

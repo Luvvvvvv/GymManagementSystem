@@ -165,14 +165,17 @@ String message = (String)request.getAttribute("message");
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(4).toString() %>
           </td>
-          <td nowrap="nowrap"><a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(5).toString()%>">обть</a>
+          <td nowrap="nowrap">
+            <a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(5).toString()%>"
+               style="color: #ffffff;text-decoration: none;background-color: #66b1ff;padding: 3px 4px 3px 3px;border-radius: 5px;">обть</a>
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(6).toString() %>
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(7).toString() %>
           </td>
           <td nowrap="nowrap">
-            <a href="<%=basePath%>ComServlet?method=delmembers1&id=<%=pagelist2.get(0).toString()%>">и╬ЁЩ</a>
+            <a href="<%=basePath%>ComServlet?method=delmembers1&id=<%=pagelist2.get(0).toString()%>"
+               style="color: white;background-color: #f56c6c;padding: 3px;border-radius: 5px;text-decoration: none;">и╬ЁЩ</a>
           </td>
         </tr>
         <% }

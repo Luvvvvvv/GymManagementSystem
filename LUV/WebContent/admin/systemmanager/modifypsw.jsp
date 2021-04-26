@@ -106,8 +106,8 @@ String message = (String)request.getAttribute("message");
           </td>
         </tr>
         <tr>
-          <td class="text-center" colspan="2"><input type="submit" value="确定" class="btn btn-info"
-                                                     style="width:100px;"/></td>
+          <td class="text-center" colspan="2">
+            <input type="submit" value="确定" class="btn btn-info" style="width:100px;background: #6eacff"/></td>
         </tr>
       </table>
     </form>

@@ -165,8 +165,10 @@ String message = (String)request.getAttribute("message");
           <td nowrap="nowrap"><%=pagelist2.get(4).toString() %>
           </td>
           <td nowrap="nowrap">
-            <a href="<%=basePath%>admin/coach/add_feedback.jsp?method=upfeedback&id=<%=pagelist2.get(0).toString()%>">ÐÞ¸Ä</a>
-            <a href="<%=basePath%>ComServlet?method=delfeedback&id=<%=pagelist2.get(0).toString()%>">É¾³ý</a>
+            <a href="<%=basePath%>admin/coach/add_feedback.jsp?method=upfeedback&id=<%=pagelist2.get(0).toString()%>"
+               style="color: white;background-color: #85ce61;padding: 3px;border-radius: 5px;text-decoration: none;">ÐÞ¸Ä</a>
+            <a href="<%=basePath%>ComServlet?method=delfeedback&id=<%=pagelist2.get(0).toString()%>"
+               style="color: white;background-color: #f56c6c;padding: 3px;border-radius: 5px;text-decoration: none;">É¾³ý</a>
           </td>
         </tr>
         <% }

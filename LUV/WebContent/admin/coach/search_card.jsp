@@ -45,7 +45,7 @@ String message = (String)request.getAttribute("message");
 <body>
 <div class="right_cont">
   <div class="title_right"><strong>信息查询</strong></div>
-  <div style="width:900px;margin:auto;">
+  <div style="width:60%;margin:auto;">
     <form action="<%=basePath %>admin/coach/search_card_info.jsp" method="post" name="form1">
       <table class="table table-bordered">
         <tr style="height: 28px;font-size: 14px">
@@ -58,7 +58,7 @@ String message = (String)request.getAttribute("message");
         </tr>
         <tr>
           <td class="text-center" colspan="2">
-            <input type="submit" value="查询" class="btn btn-info" style="width:100px;"/>
+            <input type="submit" value="查询" class="btn btn-info" style="width:100px;background: #6eacff"/>
           </td>
         </tr>
       </table>

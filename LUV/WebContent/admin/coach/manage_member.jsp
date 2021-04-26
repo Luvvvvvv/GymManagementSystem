@@ -167,15 +167,19 @@ String message = (String)request.getAttribute("message");
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(4).toString() %>
           </td>
-          <td nowrap="nowrap"><a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(5).toString()%>">ÏÂÔØ</a>
+          <td nowrap="nowrap">
+            <a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(5).toString()%>"
+               style="color: #ffffff;text-decoration: none;background-color: #66b1ff;padding: 3px 4px 3px 3px;border-radius: 5px;">ÏÂÔØ</a>
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(6).toString() %>
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(7).toString() %>
           </td>
           <td nowrap="nowrap">
-            <a href="<%=basePath%>/admin/coach/add_member.jsp?method=upmembers&id=<%=pagelist2.get(0).toString()%>">ĞŞ¸Ä</a>
-            <a href="<%=basePath%>ComServlet?method=delmembers&id=<%=pagelist2.get(0).toString()%>">É¾³ı</a>
+            <a href="<%=basePath%>/admin/coach/add_member.jsp?method=upmembers&id=<%=pagelist2.get(0).toString()%>"
+               style="color: white;background-color: #85ce61;padding: 3px;border-radius: 5px;text-decoration: none;">ĞŞ¸Ä</a>
+            <a href="<%=basePath%>ComServlet?method=delmembers&id=<%=pagelist2.get(0).toString()%>"
+               style="color: white;background-color: #f56c6c;padding: 3px;border-radius: 5px;text-decoration: none;">É¾³ı</a>
           </td>
         </tr>
         <% }

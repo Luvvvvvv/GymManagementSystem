@@ -123,8 +123,8 @@ String message = (String)request.getAttribute("message");
           </td>
         </tr>
         <tr style="height: 28px;font-size: 14px;">
-          <td class="text-center" colspan="2"><input type="submit" value="确定" class="btn btn-info  "
-                                                     style="width:100px;"/></td>
+          <td class="text-center" colspan="2">
+            <input type="submit" value="确定" class="btn btn-info" style="width:100px;"/></td>
         </tr>
       </table>
     </form>
