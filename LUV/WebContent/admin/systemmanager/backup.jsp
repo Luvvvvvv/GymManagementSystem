@@ -50,7 +50,7 @@ String message = (String)request.getAttribute("message");
         </tr>
         <tr>
           <td class="text-center" colspan="2">
-            <input type="submit" value="备份数据库" class="btn btn-info" style="width:100px"/>
+            <input type="submit" value="备份数据库" class="btn btn-info" style="width:100px;background: #6eacff"/>
           </td>
         </tr>
       </table>

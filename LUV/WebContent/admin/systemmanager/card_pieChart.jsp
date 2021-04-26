@@ -72,7 +72,7 @@ String message = (String)request.getAttribute("message");
     </form>
   </div>
 </div>
-<div id="pieChart" style="width:550px;height: 550px;top:-25px;left:390px"></div>
+<div id="pieChart" style="width:530px;height: 530px;top:-30px;left:30%"></div>
 <script type="text/javascript">
 
   var dayArr = [];
