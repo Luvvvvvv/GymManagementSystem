@@ -312,27 +312,28 @@ ul.navbar-nav {
     float: left;
     padding: 0 20px;
     position: relative;
-    left: 10px;
+    left: 20px;
 }
 
 #hour {
     float: left;
     padding: 0 20px;
     position: relative;
-    left: 16px;
+    left: 30px;
 }
 
 #minute {
     float: left;
     padding: 0 20px;
     position: relative;
-    left: 14px;
+    left: 30px;
 }
 
 #second {
     float: left;
     padding: 0 20px;
     position: relative;
+    left: 16px;
 }
 
 
