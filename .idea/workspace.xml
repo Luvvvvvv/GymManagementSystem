@@ -10,122 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="297e0080-9b8a-4b0f-a7d7-dd61c302a2de" name="Default Changelist" comment="gymnasium">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/BMI_Calculator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/BMI_Calculator.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/add_card.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/add_card.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/add_feedback.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/add_feedback.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/add_member.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/add_member.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/coach_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/coach_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/file.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_card.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_card.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_feedback.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_feedback.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_member.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_member.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/notice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/notice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_card.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_card.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_card_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_card_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_member.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_member.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_member_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_member_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/iframe/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/iframe/left.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/iframe/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/iframe/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/iframe/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/iframe/top.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/add_file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/add_file.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/add_notice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/add_notice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_card1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_card1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_feedback1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_feedback1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_file.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_member1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_member1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_notice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_notice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manager_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manager_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_card1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_card1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_card_info1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_card_info1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_feedback.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_feedback.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_feedback_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_feedback_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_member1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_member1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_member_info1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_member_info1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/add_coach.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/add_coach.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/add_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/add_manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/backup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/backup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/card_pieChart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/card_pieChart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/log.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/log.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_coach.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_coach.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/modifypsw.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/modifypsw.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/bootstrap/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/css/form-elements.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/css/picstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/css/picstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/function/mainpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/function/mainpage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/js/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/js/retina-1.1.0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/js/retina-1.1.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/js/sdmenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/js/sdmenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/down.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/down.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/images/QRcode.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/images/QRcode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/images/QRcode1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/images/QRcode1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/images/bodylogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/images/bodylogo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/images/left_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/images/left_right.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LUV/WebContent/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/BMI_Calculator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/BMI_Calculator.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/add_card.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/add_card.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/add_feedback.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/add_feedback.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/add_member.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/add_member.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/coach_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/coach_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/file.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/manage_card.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/manage_card.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/manage_feedback.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/manage_feedback.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/manage_member.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/manage_member.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/notice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/notice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/search_card.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/search_card.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/search_card_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/search_card_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/search_member.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/search_member.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/search_member_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/search_member_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/iframe/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/iframe/left.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/iframe/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/iframe/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/iframe/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/iframe/top.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/add_file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/add_file.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/add_notice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/add_notice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_card1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_card1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_feedback1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_feedback1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_file.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_member1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_member1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_notice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_notice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manager_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manager_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_card1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_card1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_card_info1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_card_info1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_feedback.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_feedback.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_feedback_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_feedback_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_member1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_member1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_member_info1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/search_member_info1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/add_coach.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/add_coach.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/add_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/add_manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/backup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/backup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/card_pieChart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/card_pieChart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/log.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/log.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/manage_coach.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/manage_coach.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/manage_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/manage_manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/modifypsw.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/modifypsw.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/bootstrap/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/css/form-elements.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/css/picstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/css/picstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/function/mainpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/function/mainpage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/js/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/js/retina-1.1.0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/js/retina-1.1.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/js/sdmenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/js/sdmenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/down.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/down.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/images/QRcode.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/images/QRcode1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/images/bodylogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/images/left_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/images/left_right.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -609,6 +496,8 @@
       <workItem from="1620210964416" duration="3542000" />
       <workItem from="1620225011292" duration="43000" />
       <workItem from="1620264494279" duration="11000" />
+      <workItem from="1620293580057" duration="524000" />
+      <workItem from="1620294732038" duration="1618000" />
     </task>
     <task id="LOCAL-00001" summary="gymnasium">
       <created>1616680538843</created>
@@ -673,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619447109645</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="gymnasium">
+      <created>1620293726803</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620293726803</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

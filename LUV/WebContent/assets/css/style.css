@@ -275,71 +275,25 @@ ul.navbar-nav {
 #times {
     font-size: 58px;
     font-family: fantasy;
-    margin-left: 5px;
     margin-top: 20px;
     color: #ae8963;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#days {
-    float: left;
-    padding: 0 20px;
-    border-right: 2px dashed;
-}
-
-#hours {
-    float: left;
-    padding: 0 20px;
-    border-right: 2px dashed;
-}
-
-#minutes {
-    float: left;
-    padding: 0 20px;
-    border-right: 2px dashed;
-}
-
-#seconds {
-    float: left;
-    padding: 0 20px;
-}
-
-#timeunit {
+#times .timeUnit {
     font-size: 20px;
-    float: left;
     position: relative;
     margin-top: 15px;
     color: #ffffff;
     font-family: fantasy;
 }
 
-#day {
-    float: left;
-    padding: 0 20px;
-    position: relative;
-    left: 20px;
+#times .border{
+    border-right: 2px dashed;
+    height: 46px;
+    margin-top: -8px;
 }
-
-#hour {
-    float: left;
-    padding: 0 20px;
-    position: relative;
-    left: 30px;
-}
-
-#minute {
-    float: left;
-    padding: 0 20px;
-    position: relative;
-    left: 30px;
-}
-
-#second {
-    float: left;
-    padding: 0 20px;
-    position: relative;
-    left: 16px;
-}
-
 
 /*log in*/
 .form-top {
