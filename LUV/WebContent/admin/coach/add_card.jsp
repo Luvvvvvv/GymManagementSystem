@@ -1,5 +1,5 @@
-<%@ page language="java" import="java.util.*" contentType="text/html;charset=gb2312" %>
-<jsp:useBean id="cb" scope="page" class="com.bean.ComBean"/>
+<%@ page import="java.util.*" contentType="text/html;charset=gb2312" %>
+<jsp:useBean id="cb" class="com.bean.ComBean"/>
 <%
   String path = request.getContextPath();
   String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -8,12 +8,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" href="<%=basePath %>assets/css/bootstrap.css"/>
-  <link rel="stylesheet" href="<%=basePath %>assets/css/picstyle.css"/>
-  <script type="text/javascript" src="<%=basePath %>assets/js/jquery1.9.0.min.js"></script>
-  <script type="text/javascript" src="<%=basePath %>assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="<%=basePath %>assets/js/sdmenu.js"></script>
-  <script type="text/javascript" src="<%=basePath %>assets/js/laydate.js"></script>
+  <link rel="stylesheet" href="<%=basePath %>/assets/css/bootstrap.css"/>
+  <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
+  <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
+  <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
 </head>
   <%
 String message = (String)request.getAttribute("message");
@@ -46,44 +44,44 @@ String message = (String)request.getAttribute("message");
 <body>
 <div class="right_cont">
   <div class="title_right"><strong>办卡人员添加</strong></div>
-  <div style="width:60%; margin:auto;">
+  <div id="main_frame">
     <form action="<%=basePath %>UpServlet" method="post" name="form1" enctype="multipart/form-data">
       <table class="table table-bordered">
-        <tr style="height: 28px;font-size: 14px">
+        <tr>
           <input type="hidden" name="method" value="<%=method%>"/>
           <input type="hidden" name="id" value="<%=id%>"/>
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+          <td class="td_frame">
             <img style="position: relative; width: 21px; top: 1px; left: -21px;"
                  src="<%=basePath %>/images/systemicon/name.jpg">
             姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：
           </td>
           <td>
-            <input style="width: 30%" type="text" name="name" class="span4" value="<%=name %>"/>
+            <input style="width: 35%" type="text" name="name" class="span4" value="<%=name %>"/>
           </td>
         </tr>
-        <tr style="height: 28px;font-size: 14px">
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+        <tr>
+          <td class="td_frame">
             <img style="position: relative; width: 21px; top: 1px; left: -21px;"
                  src="<%=basePath %>/images/systemicon/start.jpg">
             开始时间：
           </td>
           <td>
-            <input style="width: 30%" type="date" name="start" class="span2" value="<%=start %>" required/>
+            <input style="width: 35%" type="date" name="start" class="span2" value="<%=start %>" required/>
           </td>
         </tr>
-        <tr style="height: 28px;font-size: 14px">
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+        <tr>
+          <td class="td_frame">
             <img style="position: relative; width: 24px; left: -20px;"
                  src="<%=basePath %>/images/systemicon/end.jpg">
             结束时间：
           </td>
           <td>
-            <input style="width: 30%" type="date" name="end" class="span2" value="<%=end %>" required/>
+            <input style="width: 35%" type="date" name="end" class="span2" value="<%=end %>" required/>
           </td>
         </tr>
         <%if (method.equals("upcards")) { %>
-        <tr style="height: 28px;font-size: 14px">
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+        <tr>
+          <td class="td_frame">
             <img style="position: relative; width: 21px; left: -20px;"
                  src="<%=basePath %>/images/systemicon/uplode.jpg">
             上传合同：
@@ -92,8 +90,8 @@ String message = (String)request.getAttribute("message");
             <input type=file name="pic" class="span4"/></td>
         </tr>
         <%} else { %>
-        <tr style="height: 28px;font-size: 14px">
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+        <tr>
+          <td class="td_frame">
             <img style="position: relative; width: 21px; left: -20px;"
                  src="<%=basePath %>/images/systemicon/uplode.jpg">
             上传合同：
@@ -103,9 +101,10 @@ String message = (String)request.getAttribute("message");
           </td>
         </tr>
         <%} %>
-        <tr style="height: 28px;font-size: 14px">
+        <tr>
           <td class="text-center" colspan="2">
-            <input type="submit" value="确定" class="btn btn-info" style="width:100px;background: #6eacff"/></td>
+            <input type="submit" value="确定" class="btn btn-info" id="confirm"/>
+          </td>
         </tr>
       </table>
     </form>

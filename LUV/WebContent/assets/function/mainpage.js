@@ -1,14 +1,4 @@
 $(function () {
-    //Í¼Æ¬¸úËæÖ¸Õë
-    // var pic = document.getElementById('arrow');
-    // document.addEventListener('mousemove', function (event) {
-    //     var x = event.pageX;
-    //     var y = event.pageY;
-    //     pic.style.left = x + 'px';
-    //     pic.style.top = y + 'px'
-    // });
-
-
 
     setInterval(function () {
         function checkTime(i) {
@@ -27,7 +17,7 @@ $(function () {
             return d;
         }
 
-        var x = countDownDays("2021-4-30  18:00:00");
+        var x = countDownDays("2021-5-30  18:00:00");
         document.getElementById("days").innerHTML = x;
 
         function countDownHours(time) {
@@ -39,7 +29,7 @@ $(function () {
             return h;
         }
 
-        var y = countDownHours("2021-4-30  18:00:00");
+        var y = countDownHours("2021-5-30  18:00:00");
         document.getElementById("hours").innerHTML = y;
 
         function countDownMin(time) {
@@ -51,7 +41,7 @@ $(function () {
             return m;
         }
 
-        var z = countDownMin("2021-4-30  18:00:00");
+        var z = countDownMin("2021-5-30  18:00:00");
         document.getElementById("minutes").innerHTML = z;
 
         function countDownSec(time) {
@@ -62,8 +52,7 @@ $(function () {
             var s = checkTime(sec);
             return s;
         }
-
-        var r = countDownSec("2021-4-30  18:00:00");
+        var r = countDownSec("2021-5-30  18:00:00");
         document.getElementById("seconds").innerHTML = r;
     }, 1000);
 

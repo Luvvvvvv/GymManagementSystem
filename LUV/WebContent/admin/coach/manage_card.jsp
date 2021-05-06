@@ -1,5 +1,5 @@
-<%@ page language="java" import="java.util.*" contentType="text/html;charset=gb2312" %>
-<jsp:useBean id="cb" scope="page" class="com.bean.ComBean"/>
+<%@ page import="java.util.*" contentType="text/html;charset=gb2312" %>
+<jsp:useBean id="cb" class="com.bean.ComBean"/>
 <%
   String path = request.getContextPath();
   String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -8,100 +8,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" href="<%=basePath %>assets/css/bootstrap.css"/>
-  <link rel="stylesheet" href="<%=basePath %>assets/css/picstyle.css"/>
-  <script type="text/javascript" src="<%=basePath %>assets/js/jquery1.9.0.min.js"></script>
-  <script type="text/javascript" src="<%=basePath %>assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="<%=basePath %>assets/js/sdmenu.js"></script>
-  <script type="text/javascript" src="<%=basePath %>assets/js/laydate.js"></script>
+  <link rel="stylesheet" href="<%=basePath %>/assets/css/bootstrap.css"/>
+  <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
+  <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
+  <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
 </head>
-<script language="javascript">
-  function top2() {
-    form3.action = "<%=basePath%>admin/coach/manage_card.jsp?page=1";
-    form3.submit();
-  }
-
-  function last2() {
-    if (form3.pageCount.value == 0) {
-      form3.action = "<%=basePath%>admin/coach/manage_card.jsp?page=1";
-      form3.submit();
-    } else {
-      form3.action = "<%=basePath%>admin/coach/manage_card.jsp?page=" + form3.pageCount.value;
-      form3.submit();
-    }
-  }
-
-  function pre2() {
-    var page = parseInt(form3.page.value);
-    if (page <= 1) {
-      alert("已至第一页");
-    } else {
-      form3.action = "<%=basePath%>admin/coach/manage_card.jsp?page=" + (page - 1);
-      form3.submit();
-    }
-  }
-
-  function next2() {
-    var page = parseInt(form3.page.value);
-    var pageCount = parseInt(form3.pageCount.value);
-    if (page >= pageCount) {
-      alert("已至最后一页");
-    } else {
-      form3.action = "<%=basePath%>admin/coach/manage_card.jsp?page=" + (page + 1);
-      form3.submit();
-    }
-  }
-
-  function bjump2() {
-    var pageCount = parseInt(form3.pageCount.value);
-    if (fIsNumber(form3.busjump.value, "1234567890") != 1) {
-      alert("跳转文本框中只能输入数字!");
-      form3.busjump.select();
-      form3.busjump.focus();
-      return false;
-    }
-    if (form3.busjump.value > pageCount) {
-      if (pageCount == 0) {
-        form3.action = "<%=basePath%>admin/coach/manage_card.jsp?page=1";
-        form3.submit();
-      } else {
-        form3.action = "<%=basePath%>admin/coach/manage_card.jsp?page=" + pageCount;
-        form3.submit();
-      }
-    } else if (form3.busjump.value <= pageCount) {
-      var page = parseInt(form3.busjump.value);
-      if (page == 0) {
-        page = 1;
-        form3.action = "<%=basePath%>admin/coach/manage_card.jsp?page=" + page;
-        form3.submit();
-      } else {
-        form3.action = "<%=basePath%>admin/coach/manage_card.jsp?page=" + page;
-        form3.submit();
-      }
-
-    }
-
-  }
-
-  function fIsNumber(sV, sR) {
-    var sTmp;
-    if (sV.length == 0) {
-      return (false);
-    }
-    for (var i = 0; i < sV.length; i++) {
-      sTmp = sV.substring(i, i + 1);
-      if (sR.indexOf(sTmp, 0) == -1) {
-        return (false);
-      }
-    }
-    return (true);
-  }
-
-  function del() {
-    pageform.submit();
-  }
-</script>
-
   <%
 String message = (String)request.getAttribute("message");
 	if(message == null){
@@ -123,11 +34,11 @@ String message = (String)request.getAttribute("message");
 <body>
 <div class="right_cont">
   <div class="title_right"><strong>办卡人员管理</strong></div>
-  <div style="width:95%; margin:auto;">
-    <form action="" method="post" name="form3">
+  <div id="table_frame">
+    <form action="" method="post" name="form">
       <table class="table table-bordered table-striped table-hover">
         <tbody id="card">
-        <tr style="text-align: center;height: 40px;font-size: 16px;">
+        <tr id="tr1">
           <td width="80px"><strong>序号</strong></td>
           <td width="80px"><strong>姓名</strong></td>
           <td width="150px"><strong>开始时间</strong></td>
@@ -155,7 +66,7 @@ String message = (String)request.getAttribute("message");
             for (int i = 0; i < pagelist3.size(); i++) {
               List pagelist2 = (ArrayList) pagelist3.get(i);
         %>
-        <tr style="text-align: center;height: 28px;font-size: 14px;">
+        <tr id="tr2">
           <td nowrap="nowrap"><%=i + 1 %>
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(1).toString() %>
@@ -164,37 +75,38 @@ String message = (String)request.getAttribute("message");
           </td>
           <td nowrap="nowrap" id="endTime"><%=pagelist2.get(3).toString() %>
           </td>
-          <td nowrap="nowrap">
-            <a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(4).toString()%>"
-               style="color: #ffffff;text-decoration: none;background-color: #66b1ff;padding: 3px 4px 3px 3px;border-radius: 5px;">下载</a>
+          <td nowrap="nowrap" id="downloadSet">
+            <a href="<%=basePath%>down.jsp?url=<%=pagelist2.get(4).toString()%>" id="download">下载</a>
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(5).toString() %>
           </td>
           <td nowrap="nowrap"><%=pagelist2.get(6).toString() %>
           </td>
-          <td nowrap="nowrap">
-            <a href="<%=basePath%>admin/coach/add_card.jsp?method=upcards&id=<%=pagelist2.get(0).toString()%>"
-               style="color: white;background-color: #85ce61;padding: 3px;border-radius: 5px;text-decoration: none;">修改</a>
-            <a href="<%=basePath%>ComServlet?method=delcards&id=<%=pagelist2.get(0).toString()%>"
-               style="color: white;background-color: #f56c6c;padding: 3px;border-radius: 5px;text-decoration: none;">删除</a>
+          <td nowrap="nowrap" >
+            <div id="modifySet">
+              <a href="<%=basePath%>admin/coach/add_card.jsp?method=upcards&id=<%=pagelist2.get(0).toString()%>"
+                 id="modify">修改</a>
+            </div>
+            <div id="deleteSet">
+              <a href="<%=basePath%>ComServlet?method=delcards&id=<%=pagelist2.get(0).toString()%>" id="delete">删除</a>
+            </div>
           </td>
         </tr>
         <% }
         } %>
         <tr style="text-align: center">
           <td nowrap="nowrap" colspan="11">
-            <input type="hidden" name="pageCount"
-                   value="<%= session.getAttribute("busPageCount").toString()%>"/>
+            <input type="hidden" name="pageCount" value="<%= session.getAttribute("busPageCount").toString()%>"/>
             <input type="hidden" name="page" value="<%=session.getAttribute("busPage").toString()%>"/>
-            <a href="#" onClick="top2()">首页</a>&nbsp;&nbsp;&nbsp;
-            <a href="#" onClick="pre2()">上一页</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" id="home">首页</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" id="pre">上一页</a>&nbsp;&nbsp;&nbsp;
             共&nbsp;<u>&nbsp;<%=session.getAttribute("busMessageCount").toString()%>&nbsp;</u>&nbsp;条记录，共计
             <u>&nbsp;<%=session.getAttribute("busPageCount").toString()%>&nbsp;</u>
             页，当前第&nbsp;<u>&nbsp;<%=session.getAttribute("busPage").toString()%>&nbsp;</u>&nbsp;页&nbsp;&nbsp;&nbsp;
-            <a href="#" onClick="next2()">下一页</a>&nbsp;&nbsp;&nbsp;
-            <a href="#" onClick="last2()">尾页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" id="next">下一页</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" id="last">尾页</a>&nbsp;&nbsp;&nbsp;&nbsp;
             第&nbsp;<input style="width: 20px" name="busjump" type="text" class="span1"/>&nbsp;页
-            <a href="#" onClick="bjump2()">跳转</a>
+            <a href="#" id="jump">跳转</a>
           </td>
         </tr>
         </tbody>
@@ -203,25 +115,24 @@ String message = (String)request.getAttribute("message");
   </div>
 </div>
 
-<div style="width: 500px; position: relative;left: 50%;">
-  <div style="position: absolute; left: -250px">
-    <span style="font-size: 20px;font-weight: bold;position: relative;left: -5px">当前日期与时间栏</span>
-    <div style="border: 3px solid grey;font-size: 16px;position: absolute;display: block;padding: 10px;width: 120px;
-         margin-top: 18px;border-radius: 20px;background: antiquewhite;text-align: center;font-weight: 600;">
+<div id="alterBar">
+  <div id="alterBar1">
+    <span id="dateText">当前日期与时间栏</span>
+    <div id="dateBar">
       <div id="yearNow"></div>
-      <div style="margin:3px 0 3px 0" id="dateNow"></div>
+      <div id="dateNow"></div>
       <div id="timeNow"></div>
     </div>
   </div>
   <div>
-    <span style="font-size: 20px;font-weight: bold;position: relative;left: 32px">健身卡<strong
-            style="color: red">小于7天</strong>提示栏</span>
-    <div id="willBeOutdate" style="border: 3px solid grey;font-size: 15px;position: absolute;display: block;
-    padding: 12px;border-radius: 20px;background: antiquewhite;font-weight: 600;margin-top: 18px;">
+    <span id="alterCardText">健身卡<strong style="color: red">小于7天</strong>提示栏</span>
+    <div id="willBeOutdate">
     </div>
   </div>
 </div>
 
-<script src="<%=basePath %>/assets/function/cardcheck.js"></script>
+<script type="text/javascript" src="<%=basePath %>/assets/pagescript/manage_card.js"></script>
+<script type="text/javascript" src="<%=basePath %>/assets/function/cardcheck.js"></script>
+
 </body>
   <%} %>

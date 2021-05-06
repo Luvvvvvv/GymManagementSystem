@@ -1,5 +1,5 @@
-<%@ page language="java" import="java.util.*" contentType="text/html;charset=gb2312" %>
-<jsp:useBean id="cb" scope="page" class="com.bean.ComBean"/>
+<%@ page import="java.util.*" contentType="text/html;charset=gb2312" %>
+<jsp:useBean id="cb" class="com.bean.ComBean"/>
 <%
   String path = request.getContextPath();
   String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
   <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
   <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="<%=basePath %>/assets/js/sdmenu.js"></script>
-  <script type="text/javascript" src="<%=basePath %>/assets/js/laydate.js"></script>
 </head>
   <%
 String message = (String)request.getAttribute("message");
@@ -25,8 +23,7 @@ String message = (String)request.getAttribute("message");
 		out.println("alert('"+message+"');");
 		out.println("</script>");
 	}
-	request.removeAttribute("message"); 
-	
+	request.removeAttribute("message");
 	String admin=(String)session.getAttribute("user"); 
 	if(admin==null){
 		response.sendRedirect(path+"index.jsp");
@@ -47,13 +44,13 @@ String message = (String)request.getAttribute("message");
 <body>
 <div class="right_cont">
   <div class="title_right"><strong>私教课程添加</strong></div>
-  <div style="width:60%; margin:auto;">
+  <div id="main_frame">
     <form action="<%=basePath %>UpServlet" method="post" name="form1" enctype="multipart/form-data">
       <table class="table table-bordered">
-        <tr style="height: 28px;font-size: 14px">
+        <tr>
           <input type="hidden" name="method" value="<%=method%>"/>
           <input type="hidden" name="id" value="<%=id%>"/>
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+          <td class="td_frame">
             <img style="position: relative; width: 23px; left: -21px;"
                  src="<%=basePath %>/images/systemicon/name.jpg">
             学员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名：
@@ -62,8 +59,8 @@ String message = (String)request.getAttribute("message");
             <input style="width: 30%" type="text" name="name" class="span4" value="<%=name %>"/>
           </td>
         </tr>
-        <tr style="height: 28px;font-size: 14px">
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+        <tr>
+          <td class="td_frame">
             <img style="position: relative; width: 21px; left: -22px;"
                  src="<%=basePath %>/images/systemicon/course.jpg">
             课程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;内容：
@@ -72,8 +69,8 @@ String message = (String)request.getAttribute("message");
             <input type="text" name="content" class="span4" value="<%=content %>" required/>
           </td>
         </tr>
-        <tr style="height: 28px;font-size: 14px">
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+        <tr>
+          <td class="td_frame">
             <img style="position: relative; width: 24px; left: -21px;"
                  src="<%=basePath %>/images/systemicon/objective.jpg">
             课程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目标：
@@ -82,8 +79,8 @@ String message = (String)request.getAttribute("message");
             <input type="text" name="objective" class="span4" value="<%=objective %>" required/>
           </td>
         </tr>
-        <tr style="height: 28px;font-size: 14px">
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+        <tr>
+          <td class="td_frame">
             <img style="position: relative; width: 21px; top: 1px; left: -21px;"
                  src="<%=basePath %>/images/systemicon/confirm.jpg">
             课程数/已完成：
@@ -93,8 +90,8 @@ String message = (String)request.getAttribute("message");
           </td>
         </tr>
         <%if (method.equals("upmembers")) { %>
-        <tr style="height: 28px;font-size: 14px">
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+        <tr>
+          <td class="td_frame">
             <img style="position: relative; width: 21px; left: -21px;"
                  src="<%=basePath %>/images/systemicon/uplode.jpg">
             上传&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合同：
@@ -104,8 +101,8 @@ String message = (String)request.getAttribute("message");
           </td>
         </tr>
         <%} else { %>
-        <tr style="height: 28px;font-size: 14px">
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+        <tr>
+          <td class="td_frame">
             <img style="position: relative; width: 21px; left: -21px;"
                  src="<%=basePath %>/images/systemicon/uplode.jpg">
             上传&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合同：
@@ -115,9 +112,9 @@ String message = (String)request.getAttribute("message");
           </td>
         </tr>
         <%} %>
-        <tr style="height: 28px;font-size: 14px">
+        <tr>
           <td class="text-center" colspan="2">
-            <input type="submit" value="确定" class="btn btn-info" style="width:100px;background: #6eacff"/>
+            <input type="submit" value="确定" class="btn btn-info" id="confirm"/>
           </td>
         </tr>
       </table>

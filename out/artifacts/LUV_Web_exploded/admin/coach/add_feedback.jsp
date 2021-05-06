@@ -1,5 +1,5 @@
-<%@ page language="java" import="java.util.*" contentType="text/html;charset=gb2312" %>
-<jsp:useBean id="cb" scope="page" class="com.bean.ComBean"/>
+<%@ page import="java.util.*" contentType="text/html;charset=gb2312" %>
+<jsp:useBean id="cb" class="com.bean.ComBean"/>
 <%
   String path = request.getContextPath();
   String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -8,14 +8,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" href="<%=basePath %>assets/css/bootstrap.css"/>
-  <link rel="stylesheet" href="<%=basePath %>assets/css/picstyle.css"/>
-  <script type="text/javascript" src="<%=basePath %>assets/js/jquery1.9.0.min.js"></script>
-  <script type="text/javascript" src="<%=basePath %>assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="<%=basePath %>assets/js/sdmenu.js"></script>
-  <script type="text/javascript" src="<%=basePath %>assets/js/laydate.js"></script>
-
-
+  <link rel="stylesheet" href="<%=basePath %>/assets/css/bootstrap.css"/>
+  <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
+  <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
+  <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
 </head>
   <%
 String message = (String)request.getAttribute("message");
@@ -46,13 +42,13 @@ String message = (String)request.getAttribute("message");
 <body>
 <div class="right_cont">
   <div class="title_right"><strong>反馈信息添加</strong></div>
-  <div style="width:60%; margin:auto;">
+  <div id="main_frame">
     <form action="<%=basePath %>ComServlet" method="post" name="form1">
       <table class="table table-bordered">
-        <tr style="height: 28px;font-size: 14px">
+        <tr>
           <input type="hidden" name="method" value="<%=method%>"/>
           <input type="hidden" name="id" value="<%=id%>"/>
-          <td width="50%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">
+          <td class="td_frame">
             <img style="position: relative; width: 20px; left: -22px;"
                  src="<%=basePath %>/images/systemicon/feedback.jpg">
             反馈标题：
@@ -61,8 +57,8 @@ String message = (String)request.getAttribute("message");
             <input type="text" name="title" class="span4" value="<%=title %>" required/>
           </td>
         </tr>
-        <tr style="height: 28px;font-size: 14px">
-          <td width="50%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">
+        <tr>
+          <td class="td_frame">
             <img style="position: relative; width: 22px; left: -20px;"
                  src="<%=basePath %>/images/systemicon/file.jpg">
             反馈内容：
@@ -73,7 +69,7 @@ String message = (String)request.getAttribute("message");
         </tr>
         <tr>
           <td class="text-center" colspan="2">
-            <input type="submit" value="确定" class="btn btn-info" style="width:100px;background: #6eacff"/></td>
+            <input type="submit" value="确定" class="btn btn-info" id="confirm"/></td>
         </tr>
       </table>
     </form>

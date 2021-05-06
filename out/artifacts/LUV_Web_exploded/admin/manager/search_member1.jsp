@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" contentType="text/html;charset=gb2312" %>
+<%@ page contentType="text/html;charset=gb2312" %>
 <%
   String path = request.getContextPath();
   String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -11,8 +11,6 @@
   <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
   <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
   <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="<%=basePath %>/assets/js/sdmenu.js"></script>
-  <script type="text/javascript" src="<%=basePath %>/assets/js/laydate.js"></script>
 </head>
 <script type="text/javascript">
   function check() {
@@ -45,11 +43,11 @@ String message = (String)request.getAttribute("message");
 <body>
 <div class="right_cont">
   <div class="title_right"><strong>信息查询</strong></div>
-  <div style="width:60%; margin:auto;">
+  <div id="main_frame">
     <form action="<%=basePath %>/admin/manager/search_member_info1.jsp" method="post" name="form1">
       <table class="table table-bordered">
-        <tr style="height: 28px;font-size: 14px">
-          <td style="text-align: right; background-color: #f1f1f1; width: 40%">
+        <tr>
+          <td class="td_frame">
             <img style="position: relative; width: 20px; left: -22px;"
                  src="<%=basePath %>/images/systemicon/name.jpg">
             请输入姓名：
@@ -60,7 +58,7 @@ String message = (String)request.getAttribute("message");
         </tr>
         <tr>
           <td class="text-center" colspan="2">
-            <input type="submit" value="查询" class="btn btn-info" style="width:100px;background: #6eacff"/></td>
+            <input type="submit" value="查询" class="btn btn-info" id="confirm"/></td>
         </tr>
       </table>
     </form>
@@ -68,4 +66,3 @@ String message = (String)request.getAttribute("message");
 </div>
 </body>
   <%} %>
- 

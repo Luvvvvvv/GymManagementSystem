@@ -1,20 +1,16 @@
-<%@ page language="java" import="java.util.*" contentType="text/html;charset=gb2312" %>
+<%@ page contentType="text/html;charset=gb2312" %>
 <%@ include file="head.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LUV健身房管理系统 </title>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/form-elements.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="<%=basePath %>/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<%=basePath %>/assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<%=basePath %>/assets/css/style.css">
 </head>
-
 <body>
 <script language=javascript>
   function reg() {
@@ -25,9 +21,6 @@
     window.location = "lost.jsp";
   }
 </script>
-
-<%--<i class="fa fa-cny" style="position: absolute;width: 30px;height: 30px" id="arrow"></i>--%>
-
 <%--Top Banner--%>
 <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
   <div class="container">
@@ -43,22 +36,19 @@
             <li><a href="#">支持我们</a></li>
             <li><a href="#">加入我们</a></li>
           </ul>
-          <span class="li-text">
-								&nbsp;&nbsp;欢迎您联系:
-                    </span>
+          <span class="li-text">&nbsp;&nbsp;欢迎您联系:</span>
           <span class="li-social">
             <a id="wechat"><i class="fa fa-wechat"></i></a>
-            <div class="qrcode" style="position: absolute">
-              <span style="position: absolute; width: 0; height: 0; border: 10px solid transparent;
-                            border-bottom-color: white; top: -20px; left: 50px"></span>
-              <img style="border: 3px solid white;border-radius: 8px;" src="images/QRcode.jpg">
+            <div class="qrcode">
+              <span style="position: absolute;width: 0;height: 0;border: 10px solid transparent;border-bottom-color: white;top: -20px;left: 50px"></span>
+              <img style="border: 3px solid white;border-radius: 8px;" src="<%=basePath %>/images/QRcode.png">
             </div>
             <span>（点击显示二维码）</span>
             <a id="qq"><i class="fa fa-qq"></i></a>
-            <div class="qrcode1" style="position: absolute">
+            <div class="qrcode1">
               <span style="position: absolute; width: 0; height: 0; border: 10px solid transparent;
                             border-bottom-color: #ececec; top: -20px; left: 47px"></span>
-              <img style="border: 3px solid white;border-radius: 8px;" src="images/QRcode1.jpg">
+              <img style="border: 3px solid white;border-radius: 8px;" src="<%=basePath %>/images/QRcode1.png">
             </div>
           </span>
         </li>
@@ -130,11 +120,10 @@
   </div>
 </div>
 
-<script src="assets/js/jquery-1.11.1.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.backstretch.min.js"></script>
-<script src="assets/js/retina-1.1.0.min.js"></script>
-<script src="assets/function/mainpage.js"></script>
+<script src="<%=basePath %>assets/js/jquery-1.11.1.min.js"></script>
+<script src="<%=basePath %>assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="<%=basePath %>assets/js/jquery.backstretch.min.js"></script>
+<script src="<%=basePath %>assets/function/mainpage.js"></script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" contentType="text/html;charset=gb2312" %>
+<%@ page contentType="text/html;charset=gb2312" %>
 <%
   String path = request.getContextPath();
   String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -16,10 +16,10 @@
 	else{ 		
 %>
 <frameset border=0 frameSpacing=0 rows="83, *" frameBorder=0>
-  <frame name=header src="<%=basePath %>admin/iframe/top.jsp" frameBorder=0 noResize scrolling=no>
+  <frame name=header src="<%=basePath %>/admin/iframe/top.jsp" frameBorder=0 noResize scrolling=no>
   <frameset cols="225, *">
-    <frame name=menu src="<%=basePath %>admin/iframe/left.jsp" frameBorder=0 noResize>
-    <frame name=MainFrame src="<%=basePath %>admin/iframe/main.jsp" frameBorder=0 noResize scrolling=yes>
+    <frame name=menu src="<%=basePath %>/admin/iframe/left.jsp" frameBorder=0 noResize>
+    <frame name=MainFrame src="<%=basePath %>/admin/iframe/main.jsp" frameBorder=0 noResize scrolling=yes>
   </frameset>
 </frameset>
   <%} %>
