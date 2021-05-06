@@ -61,18 +61,28 @@
 <div id="countdown">
   <div id="ctitle">距离系统正式上线还有：</div>
   <div id="times">
-    <div id="days"></div>
-    <div id="hours"></div>
-    <div id="minutes"></div>
-    <div id="seconds"></div>
-  </div>
-  <div id="timeunit">
-    <div id="day">DAYS</div>
-    <div id="hour">HOURS</div>
-    <div id="minute">MINUTES</div>
-    <div id="second">SECONDS</div>
+    <div>
+      <div id="days"></div>
+      <div class="timeUnit">DAYS</div>
+    </div>
+    <div class="border"></div>
+    <div>
+      <div id="hours"></div>
+      <div class="timeUnit">HOURS</div>
+    </div>
+    <div class="border"></div>
+    <div>
+      <div id="minutes"></div>
+      <div class="timeUnit">MINUTES</div>
+    </div>
+    <div class="border"></div>
+    <div>
+      <div id="seconds"></div>
+      <div class="timeUnit">SECONDS</div>
+    </div>
   </div>
 </div>
+
 
 <%--Log In--%>
 <div class="inner-bg">
