@@ -11,16 +11,8 @@
   <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
   <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
   <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="<%=basePath %>/assets/function/search.js"></script>
 </head>
-<script type="text/javascript">
-  function check() {
-    if (document.form1.word.value == "") {
-      alert("ÇëÌîÐ´²éÑ¯¹Ø¼ü×Ö£¡");
-      document.form1.word.focus();
-      return false;
-    }
-  }
-</script>
   <%
 String message = (String)request.getAttribute("message");
 	if(message == null){

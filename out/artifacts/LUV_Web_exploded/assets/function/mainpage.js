@@ -56,7 +56,6 @@ $(function () {
         document.getElementById("seconds").innerHTML = r;
     }, 1000);
 
-
     // ÏÂÀ­²Ëµ¥
     var gym = document.getElementById('GMS');
     var mD = document.getElementById('menuDown');
@@ -92,7 +91,7 @@ $(function () {
         $(".qrcode1").fadeToggle(1000);
     });
 
-
+    // background
     $.backstretch("images/background.jpg");
 
     $('.registration-form input[type="text"], .registration-form textarea').on('focus', function () {
@@ -110,5 +109,4 @@ $(function () {
             }
         });
     });
-
 });
