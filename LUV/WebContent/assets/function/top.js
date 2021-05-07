@@ -44,12 +44,10 @@ window.onload = function () {
     }
   }
 
-
   var volumePlus = document.getElementById('plus')
   volumePlus.onclick = function () {
     audio.volume = 1;
   }
-
 
   var volumeSubtract = document.getElementById('subtract');
   volumeSubtract.onclick = function () {

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
   <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
   <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
+  <script type="module" src="<%=basePath %>/assets/pagescript/manage_member.js"></script>
 </head>
   <%
 String message = (String)request.getAttribute("message");
@@ -117,8 +118,5 @@ String message = (String)request.getAttribute("message");
     </form>
   </div>
 </div>
-
-<script type="text/javascript" src="<%=basePath %>/assets/pagescript/manage_member.js"></script>
-
 </body>
   <%} %>

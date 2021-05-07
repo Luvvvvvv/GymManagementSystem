@@ -55,7 +55,7 @@ String message = (String)request.getAttribute("message");
             ÎÄ¼şÃû³Æ£º
           </td>
           <td>
-            <input style="width: 50%" type="text" name="title" class="span4" value="<%=title %>" required/>
+            <input type="text" name="title" class="span4" value="<%=title %>" required/>
           </td>
         </tr>
         <%if (method.equals("upfiles")) { %>

@@ -11,8 +11,181 @@
   <component name="ChangeListManager">
     <list default="true" id="297e0080-9b8a-4b0f-a7d7-dd61c302a2de" name="Default Changelist" comment="gymnasium">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LUV/WebContent/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/file.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_card.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_card.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_feedback.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_feedback.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_member.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/manage_member.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/notice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/notice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_card.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_card.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_card_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_card_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_member.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_member.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_member_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/coach/search_member_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/add_file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/add_file.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_card1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_card1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_feedback1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_feedback1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_file.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_member1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_member1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_notice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/manage_notice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_card1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_card1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_card_info1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_card_info1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_feedback.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_feedback.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_feedback_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_feedback_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_member1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_member1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_member_info1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/manager/search_member_info1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/log.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/log.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_coach.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_coach.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/admin/systemmanager/manage_manager.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/function/mainpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/function/mainpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/function/top.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/function/top.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_card.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_card1.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_card1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_coach.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_coach.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_feedback.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_feedback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_feedback1.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_feedback1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_file.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_member.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_member.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_member1.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_member1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_notice.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/manage_notice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/notice.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/notice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/search_card_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/search_card_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/search_card_info1.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/search_card_info1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/search_feedback_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/search_feedback_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/search_member_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/search_member_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/search_member_info1.js" beforeDir="false" afterPath="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/search_member_info1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/file.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/manage_card.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/manage_card.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/manage_feedback.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/coach/manage_feedback.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/add_file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/add_file.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_card1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_card1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_feedback1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_feedback1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_file.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/manager/manage_file.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/log.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/log.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/manage_coach.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/admin/systemmanager/manage_coach.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_card.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_card1.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_card1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_coach.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_coach.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_feedback.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_feedback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_feedback1.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_feedback1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_file.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/assets/pagescript/manage_file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1614845741348新建文本文档.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1614846855305新建文本文档.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1614846873738新建文本文档.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1614851630294新建文本文档.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1614851642995新建文本文档.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1614851726468新建文本文档.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16149128457962018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150035001522018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150040600632018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150053846422018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150076552122018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150077196972018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150077785082018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150083047162018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150101189512018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150102461662018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150105027772018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150114441212018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150120501112018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150123247852018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150126735962018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150128136642018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150129960352018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/16150206313192018.2之后的版本用这个.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615024305755steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615042235256新建 Microsoft Excel 工作表 (2).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615042283307新建 Microsoft Excel 工作表.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615043202041IMG_1121.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615043219314IMG_1121.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615043594683新建 Microsoft Excel 工作表 (2).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615095044669新建 Microsoft Excel 工作表.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615095132295luv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615095632178luv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615095666734luv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615095799330luv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615118899620新建 Microsoft Excel 工作表.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615118925303新建 Microsoft Excel 工作表 (2).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615119304825新建 Microsoft Excel 工作表.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615119639934新建 Microsoft Excel 工作表 (2).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615119754527新建 Microsoft Excel 工作表 (2).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615120675970新建 Microsoft Excel 工作表.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615121518326新建 Microsoft Excel 工作表 (2).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615127496693GYM.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615127588735新建 Microsoft Excel 工作表.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615183384263新建 Microsoft Excel 工作表.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615191565443新建 Microsoft Excel 工作表 (2).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615191581730新建 Microsoft Excel 工作表 (2).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615365943254SunloginClient_11.0.0.33826_x64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615365995679合同.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615366033808steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615366048511steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615366076958steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615366097596steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1615366359208steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616763500824steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616764031449steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616764188841steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616764287900steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616764340370steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616764589506steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616764689770steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616764846405steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616765025591steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616765110066steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616765782120steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616765824908steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616765829849steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616765867390steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616765883719steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616766094144健身卡合同.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616766115941健身卡合同.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616766137762c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616766230764私教合同.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616766280421c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616771746883steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616771762012steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616772318707steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616772394475steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616772789818steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616772970325steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616773056474steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616773108692steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616773418209steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616774288259steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616774461976IMG_1121.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616774600049steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616774644537steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616774655626steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616774899752IMG_1121.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616775091506steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616775098226steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616775112291steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616775569619steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616775604681IMG_1121.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616775855394steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616775913178steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616775970289steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616776397682steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616779078807IMG_1121.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616779085759steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616779094857IMG_1121.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616857125687steam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616926407331新建 Microsoft Word 文档.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616926418979c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616927020227c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616929435960c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616929763712c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1616929794336c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1617958613797vue.global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1618139112137vue.global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1619084627180优秀论文学习.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1619084663568罗敬文 毕业审核.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1619085381165优秀论文学习.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LUV_Web_exploded/upfile/1619147929050优秀论文学习.doc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,21 +257,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/LUV/WebContent/images/audio" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.16.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.44" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LUV/WebContent/assets/pagescript" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.15128595" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Luv\Desktop\LUV健身管理系统\LUV\WebContent\assets\pagescript" />
       <recent name="C:\Users\Luv\Desktop\LUV健身管理系统\LUV\WebContent\images\audio" />
       <recent name="C:\Users\Luv\Desktop\LUV健身管理系统\LUV\WebContent\audio" />
       <recent name="C:\Users\Luv\Desktop\LUV健身管理系统\LUV\WebContent\images" />
       <recent name="C:\Users\Luv\Desktop\LUV健身管理系统\LUV\WebContent\images\systemicon" />
-      <recent name="C:\Users\Luv\Desktop\LUV健身管理系统\LUV\WebContent\admin\iframe" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Luv\Desktop\LUV健身管理系统\LUV\WebContent\assets\pagescript" />
@@ -108,7 +284,23 @@
       <recent name="C:\Users\Luv\Desktop\LUV健身管理系统\LUV\WebContent\images" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.59">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="file.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/LUV/WebContent/assets/pagescript/file.js" working-dir="$PROJECT_DIR$/LUV/WebContent/assets/pagescript">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 8.5.59" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.59" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
@@ -304,6 +496,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Node.js.file.js" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.59" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.file.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -497,7 +698,11 @@
       <workItem from="1620225011292" duration="43000" />
       <workItem from="1620264494279" duration="11000" />
       <workItem from="1620293580057" duration="524000" />
-      <workItem from="1620294732038" duration="1618000" />
+      <workItem from="1620294732038" duration="1795000" />
+      <workItem from="1620350452039" duration="690000" />
+      <workItem from="1620352977898" duration="43000" />
+      <workItem from="1620353285186" duration="11325000" />
+      <workItem from="1620374380691" duration="1977000" />
     </task>
     <task id="LOCAL-00001" summary="gymnasium">
       <created>1616680538843</created>
@@ -569,7 +774,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620293726803</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="gymnasium">
+      <created>1620296489071</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1620296489071</updated>
+    </task>
+    <task id="LOCAL-00012" summary="gymnasium">
+      <created>1620296518760</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1620296518760</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -8,10 +8,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" href="<%=basePath %>assets/css/bootstrap.css"/>
-  <link rel="stylesheet" href="<%=basePath %>assets/css/picstyle.css"/>
-  <script type="text/javascript" src="<%=basePath %>assets/js/jquery1.9.0.min.js"></script>
-  <script type="text/javascript" src="<%=basePath %>assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="<%=basePath %>/assets/css/bootstrap.css"/>
+  <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
+  <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
+  <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
+  <script type="module" src="<%=basePath %>/assets/pagescript/manage_file.js"></script>
 </head>
   <%
 String message = (String)request.getAttribute("message");
@@ -23,8 +24,7 @@ String message = (String)request.getAttribute("message");
 		out.println("alert('"+message+"');");
 		out.println("</script>");
 	}
-	request.removeAttribute("message"); 
-	
+	request.removeAttribute("message");
 	String username=(String)session.getAttribute("user");
 	if(username==null){
 		response.sendRedirect(path+"index.jsp");
@@ -112,8 +112,5 @@ String message = (String)request.getAttribute("message");
     </form>
   </div>
 </div>
-
-<script type="text/javascript" src="<%=basePath %>/assets/pagescript/manage_file.js"></script>
-
 </body>
   <%} %>

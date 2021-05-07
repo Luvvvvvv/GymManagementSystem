@@ -1,1 +1,0 @@
--high -novid -nojoy -refresh 165 -freq 165
