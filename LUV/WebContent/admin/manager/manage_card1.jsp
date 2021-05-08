@@ -38,7 +38,7 @@ String message = (String)request.getAttribute("message");
   <div class="title_right"><strong>办卡人员管理</strong></div>
   <div id="table_frame">
     <form action="" method="post" name="form">
-      <table class="table table-bordered table-striped table-hover">
+      <table class="table table-bordered">
         <tbody id="card">
         <tr id="tr1">
           <td width="80px"><strong>序号</strong></td>
@@ -113,19 +113,28 @@ String message = (String)request.getAttribute("message");
     </form>
   </div>
 </div>
-
 <div id="alterBar">
+  <div id="remind">
+    <div class="remindBar">
+      <div id="yellow"></div>
+      <div class="remindText">剩余天数不足7天</div>
+    </div>
+    <div class="remindBar">
+      <div id="red"></div>
+      <div class="remindText">已过期</div>
+    </div>
+  </div>
+  <div id="alert">
+    <span id="alterCardText">健身卡<strong style="color: red">小于7天</strong>提示栏</span>
+    <div id="willBeOutdate">
+    </div>
+  </div>
   <div id="alterBar1">
-    <span id="dateText">当前日期与时间栏</span>
+    <div id="dateText">当前日期与时间栏</div>
     <div id="dateBar">
       <div id="yearNow"></div>
       <div id="dateNow"></div>
       <div id="timeNow"></div>
-    </div>
-  </div>
-  <div>
-    <span id="alterCardText">健身卡<strong style="color: red">小于7天</strong>提示栏</span>
-    <div id="willBeOutdate">
     </div>
   </div>
 </div>

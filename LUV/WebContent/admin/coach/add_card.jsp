@@ -23,8 +23,7 @@ String message = (String)request.getAttribute("message");
 		out.println("alert('"+message+"');");
 		out.println("</script>");
 	}
-	request.removeAttribute("message"); 
-	
+	request.removeAttribute("message");
 	String admin=(String)session.getAttribute("user"); 
 	if(admin==null){
 		response.sendRedirect(path+"index.jsp");

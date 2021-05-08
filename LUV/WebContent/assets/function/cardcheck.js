@@ -11,13 +11,26 @@ $(function () {
   });
   var arrLength = timeArr.length - 1;
   var time = timeArr.slice(1, arrLength);
+
   for (var i = 0; i < time.length; i++) {
-    if (time[i] < 7) {
+    if (time[i] < 7 && time[i] > 0) {
+      var tr = document.getElementsByTagName('tr')[i + 1];
+      console.log(tr);
+      tr.id = 'tr3'
       console.log((i + 1) + '∫≈Ω°…Ìø®,' + ' £”‡' + time[i] + 'ÃÏ');
       document.getElementById('willBeOutdate').innerHTML += (i + 1) + '∫≈Ω°…Ìø®&nbsp;&nbsp;-----------------&nbsp;&nbsp;' + ' £”‡' + time[i] + 'ÃÏ<br>';
+    } else if (time[i] <= 0) {
+      var tr1 = document.getElementsByTagName('tr')[i + 1];
+      console.log(tr1);
+      tr1.id = 'tr4'
+      console.log((i + 1) + '∫≈Ω°…Ìø®,' + ' £”‡' + time[i] + 'ÃÏ');
+      document.getElementById('willBeOutdate').innerHTML += (i + 1) + '∫≈Ω°…Ìø®&nbsp;&nbsp;-----------------&nbsp;&nbsp;' + '&nbsp;“—π˝∆⁄<br>';
     }
+
   }
 
+
+  // date&time
   function dateFormat(fmt, date) {
     let ret;
     const opt = {

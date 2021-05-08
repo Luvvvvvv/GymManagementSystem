@@ -217,14 +217,41 @@ div.sdmenu div a:active {
 
 #table_frame #tr1 {
     text-align: center;
-    height: 40px;
-    font-size: 16px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #eeeded;
 }
 
 #table_frame #tr2 {
     text-align: center;
-    height: 28px;
+    height: 30px;
     font-size: 14px;
+}
+
+#table_frame #tr2:hover{
+    background-color: #f3f3f3;
+}
+
+#table_frame #tr3 {
+    text-align: center;
+    height: 30px;
+    font-size: 14px;
+    background-color: rgba(252, 237, 35,0.3);
+}
+
+#table_frame #tr3:hover{
+    background-color: rgba(255, 231, 31,0.5);
+ }
+
+#table_frame #tr4{
+    text-align: center;
+    height: 30px;
+    font-size: 14px;
+    background-color: rgba(255, 43, 43,0.3);
+}
+
+#table_frame #tr4:hover{
+    background-color: rgba(255, 20, 20, 0.4)
 }
 
 #left_bar {
@@ -289,16 +316,44 @@ div.sdmenu div a:active {
     background-color: #f53131;
 }
 
+
 /*alterWindow*/
 #alterBar {
-    width: 500px;
     position: relative;
-    left: 50%;
+    top: -22px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
-#alterBar1 {
-    position: absolute;
-    left: -250px;
+/*提示*/
+#remind{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.remindBar{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#yellow{
+    width: 40px;
+    height: 20px;
+    background-color: #fff38f;
+}
+
+#red{
+    width: 40px;
+    height: 20px;
+    background-color: #ffa1a1;
+}
+
+#remind .remindText{
+    margin-left: 20px;
+    font-size: 20px;
 }
 
 #dateText {
@@ -308,43 +363,54 @@ div.sdmenu div a:active {
     left: -5px;
 }
 
+
+
+/*日期与时间*/
+#alterBar1 {
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #dateBar {
+    height: 100px;
+    display: flex;
     border: 3px solid grey;
-    font-size: 16px;
-    position: absolute;
-    display: block;
-    padding: 10px;
-    width: 120px;
-    margin-top: 18px;
+    font-size: 20px;
     border-radius: 20px;
     background: antiquewhite;
     text-align: center;
     font-weight: 600;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-#dateNow {
-    margin: 3px 0 3px 0;
+/*不足7天*/
+#alert{
+    display: flex;
+    flex-direction: column;
+    width: 243px;
+    align-items: center;
 }
 
 #alterCardText {
     font-size: 20px;
     font-weight: bold;
-    position: relative;
-    left: 32px;
 }
 
 #willBeOutdate {
+    display: flex;
     border: 3px solid grey;
     font-size: 15px;
-    position: absolute;
-    display: block;
-    padding: 12px;
     border-radius: 20px;
     background: antiquewhite;
     font-weight: 600;
-    margin-top: 18px;
+    margin-top: 10px;
+    padding: 4px;
 }
 
+/*chart*/
 #pieChart {
     width: 530px;
     height: 530px;
