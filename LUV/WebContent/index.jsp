@@ -6,10 +6,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LUV健身房管理系统 </title>
+  <title>LUV健身房管理系统</title>
   <link rel="stylesheet" href="<%=basePath %>/assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="<%=basePath %>/assets/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="<%=basePath %>/assets/css/style.css">
+  <link rel="icon" href="<%=basePath %>/images/systemicon/bodylogo.jpg">
 </head>
 <body>
 <script language=javascript>

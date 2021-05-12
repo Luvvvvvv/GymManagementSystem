@@ -8,7 +8,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <link rel="stylesheet" href="<%=basePath %>/assets/css/bootstrap.css"/>
-  <link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
+  <link rel="stylesheet" href="<%=basePath %>/assets/css/mainstyle.css"/>
   <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
   <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="<%=basePath %>/assets/function/modifypsw.js"></script>

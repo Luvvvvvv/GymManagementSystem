@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="<%=basePath %>/assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="<%=basePath %>/assets/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="<%=basePath %>/assets/css/style.css">
+  <link rel="icon" href="<%=basePath %>/images/systemicon/bodylogo.jpg">
 </head>
 <body>
 <script language=javascript>

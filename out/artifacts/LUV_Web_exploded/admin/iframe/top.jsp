@@ -6,7 +6,7 @@
   String identity = (String) session.getAttribute("identity");
 %>
 <link rel="stylesheet" href="<%=basePath %>/assets/css/bootstrap.css"/>
-<link rel="stylesheet" href="<%=basePath %>/assets/css/picstyle.css"/>
+<link rel="stylesheet" href="<%=basePath %>/assets/css/mainstyle.css"/>
 <script type="text/javascript" src="<%=basePath %>/assets/js/jquery1.9.0.min.js"></script>
 <script type="text/javascript" src="<%=basePath %>/assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<%=basePath %>/assets/function/top.js"></script>
