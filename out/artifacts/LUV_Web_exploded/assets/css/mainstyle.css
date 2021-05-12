@@ -1,0 +1,479 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.header {
+    position: absolute !important;
+    width: 100%;
+    height: 80px;
+    margin-top: -2px;
+    background: url(../../images/top.png);
+}
+
+.left {
+    float: left;
+    width: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    position: relative;
+}
+
+.left img {
+    width: 28px;
+    position: absolute;
+    left: 20px;
+}
+
+.right_cont {
+    padding: 20px;
+    width: auto;
+}
+
+.logo {
+    float: left;
+    width: 365PX;
+    height: 50px;
+}
+
+#body_logo {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
+
+.logo img {
+    margin: 6px 0 0 25px
+}
+
+.header-right {
+    float: right;
+    padding-left: 50px;
+    margin-top: 8px;
+    color: #707070;
+    font-size: 12px;
+}
+
+.header-right b {
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+}
+
+#exit {
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    border: 2px solid #707070;
+    border-radius: 30px;
+    padding: 2px 5px 2px 5px;
+    box-shadow: 0px 0px 10px 1px;
+}
+
+.header-right a {
+    color: #707070;
+    line-height: 60px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.header-right a:hover {
+    color: #000000;
+}
+
+#top_bar {
+    width: 100%;
+    height: 1px;
+    position: relative;
+    top: 79px;
+    background-color: #d4d9db;
+    box-shadow: 0 0 5px 1px #c9d6de;
+}
+
+/*main*/
+#main_background {
+    width: 85%;
+    border: 3px solid #454545;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px #686868;
+}
+
+/*menu*/
+div.sdmenu {
+    font-size: 12px;
+    background: #ccc;
+    color: #fff;
+}
+
+div.sdmenu div {
+    overflow: hidden;
+    background: #fff;
+}
+
+div.sdmenu div.collapsed {
+    height: 41px;
+}
+
+div.sdmenu div span {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #bdb9c1;
+    font-size: 20px;
+    color: #ffffff;
+    text-indent: 50px;
+    font-weight: bold;
+    font-family: "microsoft yahei";
+    border: 5px outset #dedada;
+    border-radius: 30px;
+    margin-top: 1px;
+}
+
+div.sdmenu div.collapsed span {
+    height: 30px;
+    font-family: "microsoft yahei";
+    font-size: 19px;
+    color: #000000;
+    text-indent: 50px;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+div.sdmenu div a {
+    display: block;
+    color: #537a9d;
+    background: url(../../images/dumbbell.png) no-repeat 14px 2px;
+    text-indent: 29px;
+    padding: 1px 1px 3px 2px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    height: 17px;
+    border: 4px inset #b6b5b5;
+    border-radius: 30px;
+    margin: 1px 0px 1px 31px;
+    width: 132px;
+    text-align: center;
+}
+
+div.sdmenu div a:hover {
+    background-color: #e2e2e2;
+}
+
+div.sdmenu div a:active {
+    background-color: #e2e2e2;
+}
+
+.title_right {
+    text-align: center;
+    font-size: 20px;
+    font-family: "emoji";
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.title_right strong {
+    border-bottom: 2px solid #5a5a56;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+
+/*component*/
+#main_frame {
+    width: 60%;
+    margin: auto;
+}
+
+.td_frame {
+    text-align: right;
+    background-color: #f1f1f1;
+    width: 40%;
+}
+
+.table tr {
+    height: 28px;
+    font-size: 14px;
+}
+
+#conclusion {
+    border: 3px solid #ff9e9e;
+    width: 51%;
+    height: 24px;
+    margin-left: 0px;
+}
+
+/*table*/
+#table_frame {
+    width: 95%;
+    margin: auto;
+}
+
+#table_frame #tr1 {
+    text-align: center;
+    height: 50px;
+    font-size: 18px;
+    background-color: #eeeded;
+}
+
+#table_frame #tr2 {
+    text-align: center;
+    height: 30px;
+    font-size: 14px;
+}
+
+#table_frame #tr2:hover{
+    background-color: #f3f3f3;
+}
+
+#table_frame #tr3 {
+    text-align: center;
+    height: 30px;
+    font-size: 14px;
+    background-color: rgba(252, 237, 35,0.3);
+}
+
+#table_frame #tr3:hover{
+    background-color: rgba(255, 231, 31,0.5);
+ }
+
+#table_frame #tr4{
+    text-align: center;
+    height: 30px;
+    font-size: 14px;
+    background-color: rgba(255, 43, 43,0.3);
+}
+
+#table_frame #tr4:hover{
+    background-color: rgba(255, 20, 20, 0.4)
+}
+
+#left_bar {
+    width: 6px;
+    height: 100%;
+    background-color: #e5e5e5;
+    position: relative;
+    top: 0;
+    left: 207px;
+    box-shadow: 0px 0px 15px 1px #b5b1b8;
+}
+
+/*button*/
+#confirm {
+    width: 100px;
+    background: #6eacff;
+    box-shadow: 0 0 2px 1px #6eacff;
+}
+
+#download {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #66b1ff;
+    padding: 3px 4px 3px 3px;
+    border-radius: 6px;
+    /*box-shadow: 0 0 2px 1px #66b1ff;*/
+}
+
+#downloadSet a:hover {
+    background-color: #3b98ff;
+}
+
+#modify {
+    color: white;
+    background-color: #85ce61;
+    padding: 3px;
+    border-radius: 6px;
+    text-decoration: none;
+    /*box-shadow: 0 0 2px 1px #85ce61;*/
+}
+#modifySet{
+    display: inline-block;
+}
+#modifySet a:hover {
+    background-color: #58b81c;
+
+}
+
+#delete {
+    color: white;
+    background-color: #f56c6c;
+    padding: 3px;
+    border-radius: 6px;
+    text-decoration: none;
+    /*box-shadow: 0 0 2px 1px #f56c6c;*/
+}
+
+#deleteSet{
+    display: inline-block;
+}
+#deleteSet a:hover {
+    background-color: #f53131;
+}
+
+
+/*alterWindow*/
+#alterBar {
+    position: relative;
+    top: -22px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/*提示*/
+#remind{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.remindBar{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#yellow{
+    width: 40px;
+    height: 20px;
+    background-color: #fff38f;
+}
+
+#red{
+    width: 40px;
+    height: 20px;
+    background-color: #ffa1a1;
+}
+
+#remind .remindText{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#dateText {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: -5px;
+}
+
+
+
+/*日期与时间*/
+#alterBar1 {
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#dateBar {
+    height: 100px;
+    display: flex;
+    border: 3px solid grey;
+    font-size: 20px;
+    border-radius: 20px;
+    background: antiquewhite;
+    text-align: center;
+    font-weight: 600;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*不足7天*/
+#alert{
+    display: flex;
+    flex-direction: column;
+    width: 243px;
+    align-items: center;
+}
+
+#alterCardText {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#willBeOutdate {
+    display: flex;
+    border: 3px solid grey;
+    font-size: 15px;
+    border-radius: 20px;
+    background: antiquewhite;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 4px;
+}
+
+/*chart*/
+#pieChart {
+    width: 530px;
+    height: 530px;
+    top: -30px;
+    left: 30%;
+}
+
+/*audio*/
+.audioSet {
+    position: absolute;
+    left: 237px;
+    top: 26px;
+}
+
+#music {
+    width: 30px;
+    height: 30px;
+}
+
+#next_music {
+    margin-left: 15px;
+}
+
+/*volume*/
+#volumeSet {
+    left: 83px;
+    position: relative;
+    top: -29px;
+}
+
+#plus {
+    opacity: 0.5;
+    background: url(mainstyle.css);
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin-left: 14px;
+    position: absolute;
+    top: -7px;
+    border-radius: 10px;
+}
+
+#plus strong {
+    position: relative;
+    top: -4px;
+    display: inline-block;
+}
+
+#subtract {
+    opacity: 0.5;
+    background: url(mainstyle.css);
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin-left: 14px;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    border-radius: 10px;
+}
+
+#subtract strong {
+    position: relative;
+    top: -5px;
+    display: inline-block;
+}
